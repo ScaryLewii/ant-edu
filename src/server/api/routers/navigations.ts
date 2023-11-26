@@ -33,7 +33,7 @@ const navigations = [
   {
     id: 3,
     name: "Lịch thi",
-    slug: "lich-thi",
+    slug: "schedule",
     children: [
       {
         id: 2.1,
