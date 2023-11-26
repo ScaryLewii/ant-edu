@@ -119,7 +119,7 @@ const navigations = [
   {
     id: 9,
     name: "Liên hệ",
-    slug: "lien-he"
+    slug: "contact"
   },
 ];
 
