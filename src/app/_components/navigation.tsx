@@ -9,7 +9,7 @@ export default async function MainNav() {
 
 	return <header className="flex justify-between items-center px-[45px] py-[12px] fixed top-0 left-0 w-full z-50">
 		<Link href="/" className="flex gap-2">
-			<Image src={Logo} alt="ant edu" width={55} height={55} />
+			<Image src={Logo} alt="ant edu" width={55} height={54} />
 			<div className="flex flex-col gap-[2px]">
 				<b className="">AI BOOSTED ENGLISH</b>
 				<i>One Click for Everything</i>

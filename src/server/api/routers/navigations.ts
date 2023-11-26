@@ -6,7 +6,7 @@ const navigations = [
   {
     id: 1,
     name: "Về chúng tôi",
-    slug: "ve-chung-toi"
+    slug: "about"
   },
   {
     id: 2,
