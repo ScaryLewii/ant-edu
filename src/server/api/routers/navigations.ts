@@ -55,7 +55,7 @@ const navigations = [
   {
     id: 4,
     name: "Tin tức",
-    slug: "tin-tuc"
+    slug: "news"
   },
   {
     id: 5,
