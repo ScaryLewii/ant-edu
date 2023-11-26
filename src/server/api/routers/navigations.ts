@@ -11,7 +11,7 @@ const navigations = [
   {
     id: 2,
     name: "Chứng chỉ",
-    slug: "chung-chi",
+    slug: "certificate",
     children: [
       {
         id: 2.1,
