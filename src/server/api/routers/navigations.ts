@@ -60,7 +60,7 @@ const navigations = [
   {
     id: 5,
     name: "Cộng đồng",
-    slug: "cong-dong",
+    slug: "community",
     children: [
       {
         id: 5.1,
