@@ -114,7 +114,7 @@ const navigations = [
   {
     id: 8,
     name: "Đối tác",
-    slug: "doi-tac"
+    slug: "partner"
   },
   {
     id: 9,
