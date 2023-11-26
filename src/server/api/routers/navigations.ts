@@ -54,8 +54,8 @@ const navigations = [
   },
   {
     id: 4,
-    name: "Tin tức và sự kiện",
-    slug: "tin-tuc-va-su-kien"
+    name: "Tin tức",
+    slug: "tin-tuc"
   },
   {
     id: 5,
