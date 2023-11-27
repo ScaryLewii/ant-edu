@@ -5,6 +5,7 @@ import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import MainNav from "./_components/navigation";
+import Footer from "./_components/footer/footer";
 
 const inter = Montserrat({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         <TRPCReactProvider cookies={cookies().toString()}>
           <MainNav />
           {children}
+          <Footer />
         </TRPCReactProvider>
       </body>
     </html>
