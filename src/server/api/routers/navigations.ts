@@ -16,17 +16,17 @@ const navigations = [
       {
         id: 2.1,
         name: "Chứng chỉ IELTS",
-        slug: "chung-chi-ielts"
+        slug: "certificate/ielts"
       },
       {
         id: 2.2,
         name: "Chứng chỉ PTE",
-        slug: "chung-chi-pte"
+        slug: "certificate/pte"
       },
       {
         id: 2.3,
         name: "Chứng chỉ CEFR",
-        slug: "chung-chi-cefr"
+        slug: "certificate/cefr"
       },
     ]
   },

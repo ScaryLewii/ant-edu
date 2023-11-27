@@ -1,11 +1,22 @@
 import "~/styles/globals.css";
 
+import localFont from "next/font/local"
 import { Montserrat } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import MainNav from "./_components/navigation";
 import Footer from "./_components/footer/footer";
+
+const svn = localFont({
+  src: [
+    {
+      path: '../../public/font/SVN-Arsilon.otf',
+      weight: '400'
+    }    
+  ],
+  variable: '--font-svn'
+})
 
 const inter = Montserrat({
   subsets: ["latin"],
@@ -25,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-slate-600 text-white">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`font-sans ${svn.variable} ${inter.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
           <MainNav />
           {children}
