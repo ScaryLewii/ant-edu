@@ -119,7 +119,14 @@ const navigations = [
   {
     id: 9,
     name: "Liên hệ",
-    slug: "contact"
+    slug: "contact",
+    children: [
+      {
+        id: 9.1,
+        name: "Kiểm tra trình độ",
+        slug: "test-register"
+      },
+    ]
   },
 ];
 
