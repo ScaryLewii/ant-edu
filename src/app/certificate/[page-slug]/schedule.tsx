@@ -1,103 +1,91 @@
 "use client"
 
-import Image from "next/image";
-import Background from "public/background/certificate.jpg"
-import C1 from "public/static-images/c1.png"
-import C2 from "public/static-images/c-2.jpg"
-import C3 from "public/static-images/c-3.jpg"
-import C4 from "public/static-images/c-4.jpg"
-import C5 from "public/static-images/c-5.jpg"
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-
-import './styles.css'
-
-import { EffectCoverflow } from 'swiper/modules';
-import Link from "next/link";
+import Calendar from 'react-calendar';
+import moment from 'moment';
 
 const data = [
 	{
-		imgSrc: C1,
+		date: '13-12-2023',
+		state: 'full',
+		location: ['Hanoi', 'Ho Chi Minh']
 	},
 	{
-		imgSrc: C2,
+		date: '14-12-2023',
+		state: 'full',
+		location: ['Hanoi', 'HoChiMinh']
 	},
 	{
-		imgSrc: C3,
+		date: '20-12-2023',
+		state: 'online',
+		location: ['Hanoi', 'HoChiMinh']
 	},
 	{
-		imgSrc: C4,
-	},
-	{
-		imgSrc: C5,
-	},
-]
-
-const bottomNav = [
-	{
-		href: "#",
-		label: "Tổng quan"
-	},
-	{
-		href: "#",
-		label: "Cẩm nang luyện thi"
-	},
-	{
-		href: "#",
-		label: "Bí kíp về đích"
-	},
-	{
-		href: "#",
-		label: "Đánh giá năng lực"
+		date: '21-12-2023',
+		state: 'offline',
+		location: ['Hanoi', 'HoChiMinh']
 	}
 ]
 
 export default function Schedule() {
 	return (
-		<main className="flex h-screen overflow-hidden flex-col items-center justify-center">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
+		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative schedule z-20">
+			<div className="container flex justify-between h-full">
+				<div className="flex flex-col items-center justify-center w-[60%]">
+					<div className='flex gap-[36px] items-end'>
+						<div className="bg-white rounded-[25px] p-[45px] text-black">
+							<Calendar 
+								tileClassName={({ date, view }) => {
+									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'full')){
+										return 'full'
+									}
 
-			<div className="container flex flex-col justify-center items-center z-20 h-full w-">
-				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
-				<i>Bạn hãy chọn một bài thi và khám phá!</i>
+									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'online')) {
+										return 'online'
+									}
 
-				<div className="mx-auto mt-[50px]">
-					<Swiper
-						effect={'coverflow'}
-						initialSlide={2}
-						grabCursor={true}
-						centeredSlides={true}
-						slidesPerView={'auto'}
-						coverflowEffect={{
-							rotate: 0,
-							stretch: 10,
-							depth: 100,
-							slideShadows: true,
-						}}
-						modules={[EffectCoverflow]}
-					>
-						{data.map((d, index) => 
-							<SwiperSlide key={index}>
-								<Image src={d.imgSrc} alt="certificate" width={200} height={100} className="object-cover max-w-[90%]" />
-							</SwiperSlide>
-						)}
-					</Swiper>
+									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'offline')) {
+										return 'offline'
+									}
+								}} 
+							/>
+
+							<div className="flex gap-[20px] items-center justify-center mt-[40px]">
+								<div className="inline-flex items-center gap-[12px]">
+									<span className="block w-[22px] h-[22px] rounded-full bg-pink"></span>
+									<span>Lịch Online</span>
+								</div>
+
+								<div className="inline-flex items-center gap-[12px]">
+									<span className="block w-[22px] h-[22px] rounded-full bg-cyan"></span>
+									<span>Lịch Offline</span>
+								</div>
+
+								<div className="inline-flex items-center gap-[12px]">
+									<span className="block w-[22px] h-[22px] rounded-full bg-pink"></span>
+									<span>Lịch Full</span>
+								</div>
+							</div>
+						</div>
+
+						<div className='mt-[40px] flex flex-col gap-[15px] whitespace-nowrap'>
+							<div><strong>HaNoi:</strong> 13, 14, 20, 21</div>
+							<div><strong>HoChiMinh:</strong>: 13, 14, 20, 21</div>
+						</div>
+					</div>
+
+					<div className='mt-[55px]'>
+					Thời gian cấp chứng chỉ <br />
+					* Sau khi tham gia kỳ thi IELTS, thời gian cấp chứng chỉ thường là từ 7 đến 14 ngày. Thời gian chính xác có thể thay đổi tùy theo quy trình kiểm tra và đánh giá kết quả thi.
+					</div>
 				</div>
 
-				<nav className="mt-[50px]">
-					<ul className="flex justify-center gap-[60px]">
-						{bottomNav.map((item, index) =>
-							<li key={index}>
-								<Link className="hover:text-cyan text-[16px]" href={item.href}>{item.label}</Link>
-							</li>
-						)}
-					</ul>
-				</nav>
+				<div className="flex flex-col justify-center pr-[5%] text-box-2">
+					<i className="font-svn text-[32px]">Thông tin về</i>
+					<h2 className="font-bold text-[40px] text-[#FEE7B5]">
+						Lịch thi IELTS
+					</h2>
+				</div>
 			</div>
-		</main>
+		</section>
 	);
 }

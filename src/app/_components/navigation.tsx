@@ -2,7 +2,8 @@ import Link from "next/link";
 import { api } from "~/trpc/server";
 import Logo from "public/logo.png"
 import Image from "next/image";
-import { SearchIcon } from "./assets/icons";
+import { ChatIcon, SearchIcon, ArrowDown } from "./assets/icons";
+import VN from "public/static-images/VN.png"
 
 export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
@@ -47,7 +48,16 @@ export default async function MainNav() {
 				<SearchIcon />
 			</button>
 
+			<button className="fill-white hover:fill-cyan">
+				<ChatIcon />
+			</button>
+
 			<Link href="" className="bg-cyan px-[7px] py-[12px] rounded-[9px] hover:bg-opacity-80">Đăng nhập</Link>
+		
+			<button className="border border-white rounded-[9px] w-[73px] h-[48px] inline-flex items-center justify-center gap-[10px]">
+				<Image src={VN} width={29} height={29} alt="language" />
+				<ArrowDown />
+			</button>
 		</div>
 	</header>
 }

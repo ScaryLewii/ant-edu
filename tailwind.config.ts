@@ -12,7 +12,9 @@ export default {
       },
       colors: {
         cyan: "#00B7F0",
-        sea: "#001730"
+        sea: "#001730",
+        light: "#FEE7B5",
+        pink: "#FF8181",
       }
     },
   },

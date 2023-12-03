@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import Background from "public/background/cert-bg-1.jpg"
+import Background from "public/background/overview.jpg"
 import CertItem1 from "public/static-images/cert-item-1.jpg"
 import CertItem2 from "public/static-images/cert-item-2.jpg"
 import CertItem3 from "public/static-images/cert-item-3.jpg"
@@ -29,17 +29,17 @@ const data = [
 	},
 	{
 		title: "Giá trị",
-		imgSrc: CertItem1,
+		imgSrc: CertItem3,
 		content: "<p>Chứng chỉ PTE cung cấp cơ hội cải thiện khả năng ngôn ngữ, mở ra cánh cửa cho việc làm và học tập ở nước ngoài, và đóng vai trò quan trọng trong việc xây dựng hồ sơ chuyên nghiệp.</p>"
 	},
 	{
 		title: "PTE",
-		imgSrc: CertItem1,
+		imgSrc: CertItem4,
 		content: "<p><strong>Chứng chỉ PTE (Pearson Test of English)</strong> là bài kiểm tra đánh giá khả năng sử dụng tiếng Anh trong các tình huống giao tiếp hằng ngày. Nó có hai loại chứng chỉ: <strong>PTE General</strong> (đánh giá khả năng sử dụng tiếng Anh trong cuộc sống hàng ngày) và <strong>PTE Academic</strong> (đánh giá khả năng học thuật cho du học và nghiên cứu).</p>"
 	},
 	{
 		title: "PTE",
-		imgSrc: CertItem1,
+		imgSrc: CertItem5,
 		content: "<p><strong>Chứng chỉ PTE (Pearson Test of English)</strong> là bài kiểm tra đánh giá khả năng sử dụng tiếng Anh trong các tình huống giao tiếp hằng ngày. Nó có hai loại chứng chỉ: <strong>PTE General</strong> (đánh giá khả năng sử dụng tiếng Anh trong cuộc sống hàng ngày) và <strong>PTE Academic</strong> (đánh giá khả năng học thuật cho du học và nghiên cứu).</p>"
 	},
 ]
@@ -54,13 +54,13 @@ export default function Overview() {
 	}
 
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center">
+		<section className="flex h-screen overflow-hidden flex-col items-center justify-center overview">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
 			<div className="container z-20 text-center py-[10%]">
 				<span className="text-[32px] font-svn">Thông tin chung về</span>
-				<h1 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ PTE</h1>
+				<h2 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ PTE</h2>
 
 				<div className="mx-auto mt-[65px] relative">
 					<Swiper

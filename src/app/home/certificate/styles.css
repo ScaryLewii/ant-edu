@@ -7,6 +7,10 @@
 	align-items: center;
 }
 
+.home-cert .swiper-slide {
+	background: #fff;
+}
+
 @media (max-width: 1550px) {
 	.swiper-slide {
 		width: 250px;
