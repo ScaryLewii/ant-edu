@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         cyan: "#00B7F0",
+        sea: "#001730"
       }
     },
   },

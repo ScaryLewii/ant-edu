@@ -5,7 +5,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
 }
 
 @media (max-width: 1550px) {

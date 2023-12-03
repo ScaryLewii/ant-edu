@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-nav {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	z-index: 2;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
