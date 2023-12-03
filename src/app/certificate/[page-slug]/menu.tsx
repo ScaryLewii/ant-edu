@@ -55,9 +55,9 @@ const bottomNav = [
 	}
 ]
 
-export default function Certificate() {
+export default function Menu() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative">
+		<section className="flex h-screen overflow-hidden flex-col items-center justify-center">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
@@ -65,7 +65,7 @@ export default function Certificate() {
 				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
-				<div className="mx-auto mt-[50px] home-cert">
+				<div className="mx-auto mt-[50px]">
 					<Swiper
 						effect={'coverflow'}
 						initialSlide={2}

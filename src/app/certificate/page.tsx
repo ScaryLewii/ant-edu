@@ -65,7 +65,7 @@ export default function Certificate() {
 				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
-				<div className="mx-auto mt-[50px]">
+				<div className="mx-auto mt-[50px] home-cert">
 					<Swiper
 						effect={'coverflow'}
 						initialSlide={2}
