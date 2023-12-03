@@ -27,20 +27,20 @@ const data = [
 
 export default function News() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative">
+		<section className="flex flex-wrap h-auto xl:h-screen overflow-hidden flex-col items-center justify-center relative">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 			
 			<div className="bg-[#001730] bg-opacity-40 absolute top-0 right-0 w-[45%] h-full"></div>
 
-			<div className="container flex items-center justify-center z-20 h-full">
-				<div className="w-[60%]">
+			<div className="container flex flex-col lg:flex-row items-center justify-center z-20 h-full px-[15px] py-[90px] xl:py-0">
+				<div className="lg:w-[60%]">
 					{data.map((d, index) => 
 						d.sticky && <StickyPost key={index} data={d} />
 					)}
 				</div>
 
-				<div className="max-w-[450px] flex flex-col gap-[60px]">
+				<div className="xl:max-w-[450px] flex flex-col gap-[60px] mt-[80px] lg:mt-0 overflow-x-auto">
 					{data.map((d, index) => 
 						!d.sticky && <Post key={index} data={d} />
 					)}

@@ -72,3 +72,11 @@ export const Line = () => (
 <path d="M0.333333 3.5C0.333333 4.97276 1.52724 6.16667 3 6.16667C4.47276 6.16667 5.66667 4.97276 5.66667 3.5C5.66667 2.02724 4.47276 0.833333 3 0.833333C1.52724 0.833333 0.333333 2.02724 0.333333 3.5ZM47.3333 3.5C47.3333 4.97276 48.5272 6.16667 50 6.16667C51.4728 6.16667 52.6667 4.97276 52.6667 3.5C52.6667 2.02724 51.4728 0.833333 50 0.833333C48.5272 0.833333 47.3333 2.02724 47.3333 3.5ZM3 4H50V3H3V4Z" fill="white"/>
 </svg>
 )
+
+export const Hambuger = () => (
+<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="1.2998" x2="22" y2="1.2998" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+<line x1="1" y1="10.5" x2="22" y2="10.5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+<line x1="1" y1="19.6997" x2="22" y2="19.6997" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+</svg>
+)

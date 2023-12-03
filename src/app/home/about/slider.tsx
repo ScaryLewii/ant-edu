@@ -38,8 +38,8 @@ export default function Slider() {
 	const [activeIndex, setActiveIndex] = useState(1)
 
 	return (
-		<div className="flex gap-[20px] flex-1">
-			<div className="flex gap-[20px]">
+		<div className="flex gap-[20px] flex-col xl:flex-row flex-1">
+			<div className="flex gap-[20px] justify-center xl:justify-start">
 				{data.map(d =>
 					<div key={d.id}
 						className={`cursor-pointer
@@ -55,11 +55,11 @@ export default function Slider() {
 				)}
 			</div>
 
-			<div className="ml-5 relative flex-1">
+			<div className="ml-5 relative flex-1 py-[100px] xl:h-full w-full mt-[50px] xl:mt-0">
 				{data.map(d => 
 					<div key={d.id} 
 						className={`flex flex-col justify-center
-							absolute top-1/2 h-full
+							absolute top-1/2 h-full max-w-[90%]
 							transition-all duration-300
 							${activeIndex === d.id ? "-translate-y-1/2 block" : "-translate-y-1/3 none"}
 						`}

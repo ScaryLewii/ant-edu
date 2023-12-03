@@ -1,22 +1,24 @@
-"use client"
+import Image, { type StaticImageData } from "next/image";
+import Background from "public/background/certificate.jpg";
+import C2 from "public/static-images/c-2.jpg";
+import C3 from "public/static-images/c-3.jpg";
+import C4 from "public/static-images/c-4.jpg";
+import C5 from "public/static-images/c-5.jpg";
+import C1 from "public/static-images/c1.png";
 
-import Image from "next/image";
-import Background from "public/background/certificate.jpg"
-import C1 from "public/static-images/c1.png"
-import C2 from "public/static-images/c-2.jpg"
-import C3 from "public/static-images/c-3.jpg"
-import C4 from "public/static-images/c-4.jpg"
-import C5 from "public/static-images/c-5.jpg"
-
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 
-import './styles.css'
+import './styles.css';
 
-import { EffectCoverflow } from 'swiper/modules';
 import Link from "next/link";
+import Carousel1 from "./carousel-1";
+import Carousel2 from "./carousel-2";
+
+export interface IData {
+	imgSrc: StaticImageData
+}
 
 const data = [
 	{
@@ -57,7 +59,7 @@ const bottomNav = [
 
 export default function Certificate() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative">
+		<section className="hidden lg:flex lg:h-screen overflow-hidden flex-col items-center justify-center relative py-[90px] lg:py-0 px-[15px]">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
@@ -65,31 +67,16 @@ export default function Certificate() {
 				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
-				<div className="mx-auto mt-[50px] home-cert">
-					<Swiper
-						effect={'coverflow'}
-						initialSlide={2}
-						grabCursor={true}
-						centeredSlides={true}
-						slidesPerView={'auto'}
-						coverflowEffect={{
-							rotate: 0,
-							stretch: 10,
-							depth: 100,
-							slideShadows: true,
-						}}
-						modules={[EffectCoverflow]}
-					>
-						{data.map((d, index) => 
-							<SwiperSlide key={index}>
-								<Image src={d.imgSrc} alt="certificate" width={200} height={100} className="object-cover max-w-[90%]" />
-							</SwiperSlide>
-						)}
-					</Swiper>
+				<div className="mx-auto mt-[50px] home-cert hidden lg:block">
+					<Carousel1 data={data} />
+				</div>
+
+				<div className="mx-auto mt-[50px] home-cert block lg:hidden">
+					<Carousel2 data={data} />
 				</div>
 
 				<nav className="mt-[50px]">
-					<ul className="flex justify-center gap-[60px]">
+					<ul className="flex justify-center gap-[20px] xl:gap-[60px] flex-wrap">
 						{bottomNav.map((item, index) =>
 							<li key={index}>
 								<Link className="hover:text-cyan text-[16px]" href={item.href}>{item.label}</Link>

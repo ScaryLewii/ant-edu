@@ -4,17 +4,19 @@ import Background from "public/background/schedule.jpg";
 
 export default function Schedule() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative">
+		<section className="flex h-auto py-[90px] px-[15px] xl:py-0 xl:h-screen xl:overflow-hidden flex-col items-center justify-center relative">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 			
-			<div className="container flex items-center justify-around z-20 h-full">
-				<header className="w-[45%]">
-					<h1 className="text-[48px] font-bold mb-[30px]">AI BOOSTED ENGLISH</h1>
-					<i className="text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
+			<div className="container flex flex-wrap items-center justify-around z-20 h-full">
+				<header className="xl:w-[45%] max-w-[90%]">
+					<h1 className="text-[24px] lg:text-[48px] font-bold mb-[20px] lg:mb-[30px]">AI BOOSTED ENGLISH</h1>
+					<i className="text-[12px] lg:text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
 				</header>
 
-				<form className="w-[45%] flex flex-col gap-[40px] px-[50px] py-[70px]
+				<form className="xl:w-[45%] flex flex-col gap-[40px] 
+					px-[15px] py-[30px] xl:px-[50px] xl:py-[70px]
+					mt-[30px] xl:mt-0
 					backdrop-blur-md bg-[#00313D] bg-opacity-[0.05]
 					rounded-[20px] border border-[#00313D] border-opacity-[0.01]
 					shadow-[0px 4px 40px 0px] shadow-[rgba(0, 0, 0, 0.10)]">
