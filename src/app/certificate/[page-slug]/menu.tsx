@@ -62,7 +62,7 @@ export default function Menu() {
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
 			<div className="container flex flex-col justify-center items-center z-20 h-full w-">
-				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
+				<h1 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
 				<div className="mx-auto mt-[50px]">

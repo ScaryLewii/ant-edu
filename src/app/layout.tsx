@@ -5,7 +5,7 @@ import { Montserrat } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import MainNav from "./_components/navigation";
+import MainNav from "./_components/navigation/navigation";
 import Footer from "./_components/footer/footer";
 
 const svn = localFont({

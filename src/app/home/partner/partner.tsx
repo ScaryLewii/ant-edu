@@ -46,7 +46,7 @@ export default function Partner() {
 
 			<div className="container flex flex-col items-center justify-center z-20 text-center">
 				<header>
-					<h1 className="ext-[24px] lg:text-[48px] font-bold">Đối tác của chúng tôi</h1>
+					<h1 className="ext-[24px] lg:text-[48px] font-bold text-glow">Đối tác của chúng tôi</h1>
 					<i className="text-[12px] lg:text-[18px] font-bold mt-[30px]">Bạn hãy chọn một bài thi và khám phá!</i>
 				</header>
 			</div>

@@ -46,12 +46,12 @@ export default function Partner() {
 
 			<div className="container flex flex-col items-center justify-center z-20 text-center">
 				<header>
-					<h1 className="text-[48px] font-bold">Đối tác của chúng tôi</h1>
-					<i className="text-[18px] font-bold mt-[30px]">Bạn hãy chọn một bài thi và khám phá!</i>
+					<h1 className="text-[48px] font-bold text-glow">Đối tác của chúng tôi</h1>
+					<i className="text-[18px] mt-[30px]">Bạn hãy chọn một bài thi và khám phá!</i>
 				</header>
 			</div>
 
-			<section className="bg-[#001730] bg-opacity-40 py-[80px] z-20 w-full mt-[90px]">
+			<section className="bg-[#001730] bg-opacity-40 pt-[80px] pb-[10%] z-20 w-full mt-[90px]">
 				<div className="container mx-auto">
 					<div className="flex justify-center items-center gap-[100px]">
 						{partners1.map((img, index) =>

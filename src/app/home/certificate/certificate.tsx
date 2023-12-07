@@ -64,7 +64,7 @@ export default function Certificate() {
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
 			<div className="container flex flex-col justify-center items-center z-20 h-full w-">
-				<h1 className="font-bold text-[40px] mb-[16px]">Chứng chỉ</h1>
+				<h1 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
 				<div className="mx-auto mt-[50px] home-cert hidden lg:block">
@@ -78,8 +78,9 @@ export default function Certificate() {
 				<nav className="mt-[50px]">
 					<ul className="flex justify-center gap-[20px] xl:gap-[60px] flex-wrap">
 						{bottomNav.map((item, index) =>
-							<li key={index}>
-								<Link className="hover:text-cyan text-[16px]" href={item.href}>{item.label}</Link>
+							<li key={index} className="group">
+								<Link className="text-[16px] mb-1 block" href={item.href}>{item.label}</Link>
+								<span className="border border-transparent block w-full group-hover:border-white"></span>
 							</li>
 						)}
 					</ul>

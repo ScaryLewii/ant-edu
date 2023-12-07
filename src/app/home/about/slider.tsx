@@ -5,7 +5,8 @@ import VisionImg from "public/background/vision.jpg"
 import ApparatusImg from "public/background/apparatus.jpg"
 import ValueImg from "public/background/value.jpg"
 import MissionImg from "public/background/mission.jpg"
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 const data = [
 	{
@@ -37,8 +38,12 @@ const data = [
 export default function Slider() {
 	const [activeIndex, setActiveIndex] = useState(1)
 
+	useEffect(() => {
+		isMobile && setActiveIndex(0)
+	}, [])
+
 	return (
-		<div className="flex gap-[20px] flex-col xl:flex-row flex-1">
+		<div className="flex gap-[20px] flex-col xl:flex-row flex-1 items-center w-full">
 			<div className="flex gap-[20px] justify-center xl:justify-start">
 				{data.map(d =>
 					<div key={d.id}
@@ -50,7 +55,9 @@ export default function Slider() {
 						onMouseEnter={() => setActiveIndex(d.id)}
 					>
 						<Image src={d.imgSrc} alt={d.title} className="absolute h-full object-cover" />
-						<h2>{d.title}</h2>
+						{activeIndex == 0 &&
+							<h2 className="text-[20px] whitespace-nowrap font-bold absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1]">{d.title}</h2>
+						}
 					</div>
 				)}
 			</div>

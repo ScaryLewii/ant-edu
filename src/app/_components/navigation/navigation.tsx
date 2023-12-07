@@ -3,7 +3,9 @@ import Link from "next/link";
 import Logo from "public/logo.png";
 import VN from "public/static-images/VN.png";
 import { api } from "~/trpc/server";
-import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "./assets/icons";
+import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
+import SearchInput from "./search-input";
+import GuideBtn from "./guide-btn";
 
 export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
@@ -45,13 +47,9 @@ export default async function MainNav() {
 		</nav>
 
 		<div className="flex items-center gap-5">
-			<button className="fill-white hover:fill-cyan">
-				<SearchIcon />
-			</button>
+			<SearchInput />
 
-			<button className="fill-white hover:fill-cyan">
-				<ChatIcon />
-			</button>
+			<GuideBtn />
 
 			<Link href="" className="bg-cyan px-[7px] py-[12px] rounded-[9px] hover:bg-opacity-80">Đăng nhập</Link>
 		

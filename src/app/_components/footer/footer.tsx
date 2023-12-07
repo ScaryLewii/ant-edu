@@ -27,19 +27,19 @@ export default function Footer() {
 
 					<ul className="flex items-center gap-[20px] lg:gap-[50px]">
 						<li>
-							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px]">
+							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
 								<FacebookIcon />
 							</Link>
 						</li>
 
 						<li>
-							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px]">
+							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
 								<InstagramIcon />
 							</Link>
 						</li>
 
 						<li>
-							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px]">
+							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
 								<TiktokIcon />
 							</Link>
 						</li>
