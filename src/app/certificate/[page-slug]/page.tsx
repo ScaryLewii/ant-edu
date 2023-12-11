@@ -11,10 +11,10 @@ import Practice from "./practice";
 import Schedule from "./schedule";
 
 export default function Certificate() {
-	gsap.registerPlugin(ScrollTrigger);
 	const elementRef = useRef(null)
 
 	useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
 		const element = elementRef.current as unknown as HTMLElement
 		if (!element) return
 		const tl = gsap.timeline({yoyo: true})
@@ -29,7 +29,7 @@ export default function Certificate() {
 				width: '65%',
 				right: 0,
 				scrollTrigger: {
-					markers: true,
+					// markers: true,
 					trigger: element.querySelector(".overview"),
 					start: "top",
 					endTrigger: element.querySelector(".pricing"),
@@ -47,7 +47,7 @@ export default function Certificate() {
 				right: undefined,
 				left: 0,
 				scrollTrigger: {
-					markers: true,
+					// markers: true,
 					trigger: element.querySelector(".pricing"),
 					start: "center",
 					endTrigger: element.querySelector(".schedule"),
@@ -67,7 +67,7 @@ export default function Certificate() {
 				width: '100%',
 				height: '100%',
 				scrollTrigger: {
-					markers: true,
+					// markers: true,
 					trigger: element.querySelector(".schedule"),
 					start: "center",
 					endTrigger: element.querySelector(".guidance"),
@@ -83,7 +83,7 @@ export default function Certificate() {
 			{
 				height: '650px',
 				scrollTrigger: {
-					markers: true,
+					// markers: true,
 					trigger: element.querySelector(".guidance"),
 					start: "center",
 					endTrigger: element.querySelector(".practice"),
@@ -108,9 +108,6 @@ export default function Certificate() {
 				<Guidance />
 
 				<Practice />
-
-				{/* <Image src={Background} width={1920} height={1080} alt="home background"
-					className="absolute top-0 w-full h-full object-cover" /> */}
 
 				<div className="bg-[#001730] bg-opacity-40 absolute bottom-0 h-full blue-box z-10"></div>
 			</div>
