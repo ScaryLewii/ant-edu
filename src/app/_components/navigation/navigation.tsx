@@ -11,7 +11,7 @@ export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
 
 	return <>
-	<header className="hidden xl:flex justify-between items-center px-[45px] py-[12px] fixed top-0 left-0 w-full z-50 ">
+	<header className="hidden 2xl:flex justify-between items-center px-[45px] py-[12px] fixed top-0 left-0 w-full z-50 ">
 		<Link href="/" className="flex gap-2">
 			<Image src={Logo} alt="ant edu" width={55} height={54} className="object-contain w-[55px] h[54px]" />
 			<div className="flex flex-col gap-[2px]">
@@ -61,7 +61,7 @@ export default async function MainNav() {
 	</header>
 	
 
-	<header className="flex xl:hidden justify-between items-center p-[15px] fixed top-0 left-0 w-full z-50 ">
+	<header className="flex 2xl:hidden justify-between items-center p-[15px] fixed top-0 left-0 w-full z-50 ">
 		<Link href="/" className="flex gap-2">
 			<Image src={Logo} alt="ant edu" width={55} height={54} className="object-contain w-[32px] h-[31px]" />
 			<div className="uppercase text-[10px] font-semibold">The Assessment<br/> Center</div>
