@@ -1,0 +1,15 @@
+.swiper-slide {
+	width: 280px;
+	height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax {
+	background-image: url(../../../../public/background/cert-bg-2.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}

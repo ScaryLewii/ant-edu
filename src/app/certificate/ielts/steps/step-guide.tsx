@@ -12,7 +12,7 @@ const GuideStep = () => {
 	return (
 		<>
 		<i className="font-svn text-[32px]">Hướng dẫn</i>
-		<h2 className="font-bold text-[40px] text-light">Đăng ký thi PTE</h2>
+		<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>
 
 		<div className="mx-auto mt-[80px] max-w-[888px]">
 			<div>

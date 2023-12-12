@@ -34,14 +34,14 @@ const data = [
 	{
 		title: "Tài liệu ôn thi",
 		imgSrc: P4,
-		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi PTE có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
+		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi IELTS có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
 		btnLabel: "Chi tiết",
 		url: "#"
 	},
 	{
-		title: "Mẹo thi PTE",
+		title: "Mẹo thi IELTS",
 		imgSrc: P5,
-		content: 'Hãy cùng khám phá các "Trick" để đạt điểm tối đa trong bài thi PTE nhé',
+		content: 'Hãy cùng khám phá các "Trick" để đạt điểm tối đa trong bài thi IELTS nhé',
 		btnLabel: "Chi tiết",
 		url: "#"
 	},
@@ -54,7 +54,7 @@ export default function Practice() {
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
 			<div className="text-center z-20">
-				<h2 className="font-bold text-[40px] text-light">Đăng ký thi PTE</h2>
+				<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>
 
 				<div className="container mx-auto mt-[140px] flex items-center justify-center gap-[40px]">
 					{data.map((d, index) =>

@@ -3,18 +3,28 @@
 const data = [
 	{
 		stt: 1,
-		content: "Lệ phí thi PTE Academic",
-		pricing: "180 USD"
+		content: "Pre A1 Starters (YLE Starters)",
+		pricing: "902.000 VNĐ"
 	},
 	{
 		stt: 2,
-		content: "Lệ phí thi chứng chỉ tiếng Anh PTE UKVI",
-		pricing: "~ 180 USD"
+		content: "A1 Movers (YLE Movers)",
+		pricing: " 968.000 VNĐ"
 	},
 	{
 		stt: 3,
-		content: "Chứng chỉ tiếng Anh PTE Home",
-		pricing: "~ 150 USD"
+		content: "A2 Flyers (YLE Flyers)",
+		pricing: "1.034.000 VNĐ"
+	},
+	{
+		stt: 4,
+		content: "B1 Preliminary (PET)/ Preliminary for Schools (PETfS",
+		pricing: " 1.265.000 VNĐ"
+	},
+	{
+		stt: 5,
+		content: "A2 Key (KET)/ Key for Schools (KETfS)",
+		pricing: " 1.287.000 VNĐ"
 	}
 ]
 

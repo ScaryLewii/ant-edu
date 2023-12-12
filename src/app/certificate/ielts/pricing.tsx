@@ -3,18 +3,28 @@
 const data = [
 	{
 		stt: 1,
-		content: "Lệ phí thi PTE Academic",
-		pricing: "180 USD"
+		content: "Lệ phí thi IELTS trên giấy",
+		pricing: "VND 4.664.000 "
 	},
 	{
 		stt: 2,
-		content: "Lệ phí thi chứng chỉ tiếng Anh PTE UKVI",
-		pricing: "~ 180 USD"
+		content: "Lệ phí thi IELTS trên máy tính",
+		pricing: "VND 4.664.000 "
 	},
 	{
 		stt: 3,
-		content: "Chứng chỉ tiếng Anh PTE Home",
-		pricing: "~ 150 USD"
+		content: "Lệ phí thi IELTS UKVI",
+		pricing: "VND 5.252.000 "
+	},
+	{
+		stt: 4,
+		content: "Lệ phí thi IELTS Life Skills",
+		pricing: "VND 4.414.00"
+	},
+	{
+		stt: 5,
+		content: "<strong>Phí chuyển phát nhanh DHL để gửi bảng điểm ra nước ngoài </strong><br /><i>* mỗi địa chỉ quy định tối đa 500gr</i>",
+		pricing: "VND  1.400.000 "
 	}
 ]
 

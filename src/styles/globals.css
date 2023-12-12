@@ -112,6 +112,7 @@ svg {
 .react-calendar__navigation {
 	position: relative;
 	margin-block-end: 40px;
+	margin-inline: 20px;
 }
 
 .react-calendar__navigation__arrow {
@@ -126,7 +127,7 @@ svg {
 }
 
 .react-calendar__navigation__prev-button {
-	right: 30px;
+	right: 60px;
 }
 
 .react-calendar__navigation__prev2-button,
