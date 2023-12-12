@@ -1,22 +1,22 @@
 "use client"
 
 import Image from "next/image";
-import Background from "public/background/certificate.jpg"
-import C1 from "public/static-images/c1.png"
-import C2 from "public/static-images/c-2.jpg"
-import C3 from "public/static-images/c-3.jpg"
-import C4 from "public/static-images/c-4.jpg"
-import C5 from "public/static-images/c-5.jpg"
+import Background from "public/background/certificate.jpg";
+import C2 from "public/static-images/c-2.jpg";
+import C3 from "public/static-images/c-3.jpg";
+import C4 from "public/static-images/c-4.jpg";
+import C5 from "public/static-images/c-5.jpg";
+import C1 from "public/static-images/c1.png";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 
-import './styles.css'
+import './styles.css';
 
-import { EffectCoverflow } from 'swiper/modules';
 import Link from "next/link";
+import { EffectCoverflow } from 'swiper/modules';
 
 const data = [
 	{

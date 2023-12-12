@@ -5,6 +5,10 @@
 await import("./src/env.mjs");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+	generateBuildId: () => {
+		return '2023-12-11-01'
+	},
+};
 
 export default config;

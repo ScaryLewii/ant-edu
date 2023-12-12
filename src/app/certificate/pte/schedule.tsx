@@ -5,24 +5,44 @@ import moment from 'moment';
 
 const data = [
 	{
-		date: '13-12-2023',
+		date: '08-11-2023',
 		state: 'full',
-		location: ['Hanoi', 'Ho Chi Minh']
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
 	},
 	{
-		date: '14-12-2023',
+		date: '09-11-2023',
 		state: 'full',
-		location: ['Hanoi', 'HoChiMinh']
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
 	},
 	{
-		date: '20-12-2023',
-		state: 'online',
-		location: ['Hanoi', 'HoChiMinh']
-	},
-	{
-		date: '21-12-2023',
+		date: '15-11-2023',
 		state: 'offline',
-		location: ['Hanoi', 'HoChiMinh']
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
+	},
+	{
+		date: '16-11-2023',
+		state: 'offline',
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
+	},
+	{
+		date: '22-11-2023',
+		state: 'offline',
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
+	},
+	{
+		date: '23-11-2023',
+		state: 'offline',
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
+	},
+	{
+		date: '29-11-2023',
+		state: 'offline',
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
+	},
+	{
+		date: '30-11-2023',
+		state: 'offline',
+		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
 	}
 ]
 
@@ -61,28 +81,29 @@ export default function Schedule() {
 								</div>
 
 								<div className="inline-flex items-center gap-[12px]">
-									<span className="block w-[22px] h-[22px] rounded-full bg-pink"></span>
-									<span>Lịch Full</span>
+									<span className="block w-[22px] h-[22px] rounded-full bg-gray"></span>
+									<span>Lịch thi kín</span>
 								</div>
 							</div>
 						</div>
 
 						<div className='mt-[40px] flex flex-col gap-[15px] whitespace-nowrap'>
-							<div><strong>HaNoi:</strong> 13, 14, 20, 21</div>
-							<div><strong>HoChiMinh:</strong>: 13, 14, 20, 21</div>
+							<div><strong>TP.Hà Nội:</strong> 13, 14, 20, 21</div>
+							<div><strong>TP.Đà Nẵng:</strong>: 13, 14, 20, 21</div>
+							<div><strong>TP.Hồ Chí Minh:</strong>: 13, 14, 20, 21</div>
 						</div>
 					</div>
 
 					<div className='mt-[55px]'>
 					Thời gian cấp chứng chỉ <br />
-					* Sau khi tham gia kỳ thi IELTS, thời gian cấp chứng chỉ thường là từ 7 đến 14 ngày. Thời gian chính xác có thể thay đổi tùy theo quy trình kiểm tra và đánh giá kết quả thi.
+					<i>* Sau khi hoàn thành kỳ thi, thí sinh sẽ nhận được kết quả và chứng chỉ PTE qua email sau <strong>khoảng 5-7 ngày</strong> làm việc.</i>
 					</div>
 				</div>
 
 				<div className="flex flex-col justify-center pr-[5%] text-box-2">
 					<i className="font-svn text-[32px]">Thông tin về</i>
 					<h2 className="font-bold text-[40px] text-[#FEE7B5]">
-						Lịch thi IELTS
+						Lịch thi PTE
 					</h2>
 				</div>
 			</div>

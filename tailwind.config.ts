@@ -15,6 +15,7 @@ export default {
         sea: "#001730",
         light: "#FEE7B5",
         pink: "#FF8181",
+        gray: "#909090"
       }
     },
   },
