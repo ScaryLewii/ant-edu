@@ -49,12 +49,12 @@ const data = [
 
 export default function Practice() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center practice relative">
+		<section className="flex flex-col items-center justify-center practice relative">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
 			<div className="text-center z-20">
-				<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>
+				<h2 className="font-bold text-[40px] text-light">Luyện thi CEFR</h2>
 
 				<div className="container mx-auto mt-[140px] flex items-center justify-center gap-[40px]">
 					{data.map((d, index) =>

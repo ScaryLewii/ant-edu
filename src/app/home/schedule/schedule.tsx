@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Background from "public/background/schedule.jpg";
+import Block from "~/app/_components/layout/block";
 
 
 export default function Schedule() {
 	return (
-		<section className="flex h-auto py-[90px] px-[15px] xl:py-0 xl:h-screen xl:overflow-hidden flex-col items-center justify-center relative">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
-			
-			<div className="container flex flex-wrap items-center justify-around z-20 h-full">
+		<Block childrenClassName="container flex flex-wrap items-center justify-around h-full" backgroundSrc={Background}>
+			<>
 				<header className="xl:w-[45%] max-w-[90%]">
 					<h1 className="text-[24px] lg:text-[48px] font-bold mb-[20px] lg:mb-[30px] text-glow">AI BOOSTED ENGLISH</h1>
 					<i className="text-[12px] lg:text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
@@ -47,7 +45,7 @@ export default function Schedule() {
 
 						<div className="text-center mt-[60px]"><button className="px-[34px] py-[15px] bg-cyan hover:bg-opacity-80 rounded-[9px]">Tiếp theo</button></div>
 				</form>
-			</div>
-		</section>
+			</>
+		</Block>
 	);
 }

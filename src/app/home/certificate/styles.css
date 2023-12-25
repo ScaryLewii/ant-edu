@@ -9,6 +9,8 @@
 
 .home-cert .swiper-slide {
 	background: #fff;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
 @media (max-width: 1550px) {

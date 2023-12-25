@@ -7,6 +7,8 @@ export default function Post({data}: {data: Post}) {
 			<div className="text-cyan">{data.date} | <span className="uppercase">{data.category}</span></div>
 			<Link href="#" className="text-[22px] uppercase font-semibold hover:text-cyan">{data.title}</Link>
 			<p>{data.excerpt}</p>
+
+			<Link href="#" className="italic font-semibold underline">Đọc thêm</Link>
 		</article>
 	)
 }

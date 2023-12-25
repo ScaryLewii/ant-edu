@@ -8,6 +8,7 @@ import P2 from "public/static-images/p-2.jpg"
 import P3 from "public/static-images/p-3.jpg"
 import P4 from "public/static-images/p-4.jpg"
 import P5 from "public/static-images/p-5.jpg"
+import Block from "~/app/_components/layout/block";
 
 const data = [
 	{
@@ -49,12 +50,9 @@ const data = [
 
 export default function Practice() {
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center practice relative">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
-
+		<Block backgroundSrc={Background}>
 			<div className="text-center z-20">
-				<h2 className="font-bold text-[40px] text-light">Đăng ký thi PTE</h2>
+				<h2 className="font-bold text-[40px] text-light">Luyện thi PTE</h2>
 
 				<div className="container mx-auto mt-[140px] flex items-center justify-center gap-[40px]">
 					{data.map((d, index) =>
@@ -74,6 +72,6 @@ export default function Practice() {
 					)}
 				</div>
 			</div>
-		</section>
+		</Block>
 	);
 }

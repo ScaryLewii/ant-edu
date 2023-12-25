@@ -7,7 +7,7 @@ import { FacebookIcon, InstagramIcon, TiktokIcon } from "../assets/icons";
 
 export default function Footer() {
 	return (
-		<main className="flex lg:h-screen overflow-hidden flex-col items-center justify-center relative px-[15px] pt-[90px] pb-[40px] lg:py-0">
+		<section className="flex flex-col items-center justify-center relative px-[15px] pt-[90px] pb-[40px]">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
@@ -48,6 +48,6 @@ export default function Footer() {
 
 				<FacebookPage />
 			</div>
-		</main>
+		</section>
 	);
 }

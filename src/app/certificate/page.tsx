@@ -57,7 +57,7 @@ const bottomNav = [
 
 export default function Certificate() {
 	return (
-		<main className="flex h-screen overflow-hidden flex-col items-center justify-center">
+		<main className="flex flex-col items-center justify-center">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 

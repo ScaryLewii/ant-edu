@@ -51,7 +51,7 @@ export default function Partner() {
 				</header>
 			</div>
 
-			<section className="bg-[#001730] bg-opacity-40 py-[80px] z-20 w-full mt-[90px] px-[15px]">
+			<section className="bg-[#001730] bg-opacity-40 py-[80px] z-20 w-full mt-[190px] px-[15px]">
 				<div className="container mx-auto">
 					<div className="flex flex-wrap justify-center items-center gap-[20px] lg:gap-[100px]">
 						{partners1.map((img, index) =>

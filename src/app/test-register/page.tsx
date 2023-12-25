@@ -11,7 +11,7 @@ export default function Contact() {
 	const [step, setStep] = useState(1)
 	
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center relative">
+		<main className="flex flex-col items-center justify-center relative">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
@@ -64,8 +64,9 @@ export default function Contact() {
 							<div className="flex flex-col gap-[20px] w-[45%]">
 								<label htmlFor="city" className="font-bold">Câu hỏi của bạn là về?</label>
 								<select id="city" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]">
-									<option className="text-black" value="HN">Khóa học tiếng Anh tại Hà Nội</option>
-									<option className="text-black" value="DN">Khóa học tiếng Anh tại Hà Nội</option>
+									<option className="text-black" value="HN">Khóa học IELTS offline tại Hà Nội</option>
+									<option className="text-black" value="DN">Khóa học IELTS online</option>
+									<option className="text-black" value="DN">Khóa học Tiếng Anh online</option>
 								</select>
 							</div>
 						</div>

@@ -27,7 +27,7 @@ const data = [
 
 			<p><strong>IELTS có hai hình thức thi chính:</strong> IELTS Academic dành cho người học muốn du học hoặc nghiên cứu ở nước ngoài, và IELTS General Training dành cho mục đích di cư hoặc làm việc ở nước ngoài. Chứng chỉ này đo lường bốn kỹ năng: Nghe, Đọc, Viết và Nói.</p>
 			
-			<p><strong>ELTS gồm các cấp trình độ từ 1 đến 9,</strong> trong đó cấp 1 đại diện cho người không sử dụng tiếng Anh và cấp 9 đại diện cho người sử dụng tiếng Anh giỏi như người bản xứ. 
+			<p><strong>IELTS gồm các cấp trình độ từ 1 đến 9,</strong> trong đó cấp 1 đại diện cho người không sử dụng tiếng Anh và cấp 9 đại diện cho người sử dụng tiếng Anh giỏi như người bản xứ. 
 
 				Mỗi cấp trình độ phản ánh khả năng sử dụng tiếng Anh trong các tình huống khác nhau, từ cơ bản đến chuyên sâu. Đối với mỗi cấp trình độ, bạn sẽ phải vượt qua các phần kiểm tra Nghe, Đọc, Viết và Nói tương ứng.</p>
 			<p>Thời gian thi thường khoảng 3 giờ tùy theo loại chứng chỉ.</p>
@@ -41,7 +41,7 @@ const data = [
 	{
 		title: "Các khóa học",
 		imgSrc: Pte2,
-		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8' href='#'>Khóa học luyện thi</a></div>"
+		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8' href='https://therealielts.vn/lo-trinh-hoc-ielts/'>Khóa học luyện thi</a></div>"
 	},
 	{
 		title: "Test trình độ",
@@ -51,7 +51,7 @@ const data = [
 			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="#" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="/404" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
 			</div>
 		</div>`
 	},
@@ -63,9 +63,9 @@ const data = [
 				<p>Chúng tôi sẽ cùng bạn chuẩn bị tốt nhất cho kỳ thi sắp tới nhé!</p>
 
 				<div class="mt-8 flex items-center justify-center gap-[30px]">
-					<a href="#" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
+					<a href="/404" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
 					<a href="#" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Tài liệu ôn thi</a>
-					<a href="#" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
+					<a href="/404" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
 				</div>
 			</div>
 		`
@@ -73,7 +73,7 @@ const data = [
 	{
 		title: "Các cấp trình độ",
 		imgSrc: Pte5,
-		content: "<p><strong>PTE General:</strong> Đánh giá khả năng sử dụng tiếng Anh trong giao tiếp cơ bản và tương tác xã hội. <br/><br/><strong>PTE Academic:</strong> Đánh giá khả năng sử dụng tiếng Anh trong môi trường học thuật, phục vụ cho du học và nghiên cứu.</p>"
+		content: "<p><strong>Chứng chỉ IELTS</strong> (International English Language Testing System) là một trong những chứng chỉ tiếng Anh quốc tế phổ biến nhất. Nó được công nhận rộng rãi và được sử dụng để đánh giá khả năng sử dụng tiếng Anh trong môi trường học tập, làm việc và giao tiếp hàng ngày. <br/><br/><strong>IELTS có hai hình thức thi chính:</strong> IELTS Academic dành cho người học muốn du học hoặc nghiên cứu ở nước ngoài, và IELTS General Training dành cho mục đích di cư hoặc làm việc ở nước ngoài. Chứng chỉ này đo lường bốn kỹ năng: Nghe, Đọc, Viết và Nói.</p>"
 	},
 	{
 		title: "Cộng đồng",
@@ -83,10 +83,10 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="https://www.facebook.com/profile.php?id=6155391951562" target="_blank" class="font-bold">Website</a>
+					<a href="https://ant-edu.ai/" target="_blank" class="font-bold">Website</a>
 					<a href="https://www.facebook.com/profile.php?id=6155391951562" target="_blank" class="font-bold">Facebook</a>
-					<a href="https://www.facebook.com/profile.php?id=6155391951562" target="_blank" class="font-bold">Tiktok</a>
-					<a href="https://www.facebook.com/profile.php?id=6155391951562" target="_blank" class="font-bold">Youtube</a>
+					<a href="https://www.tiktok.com/@thereal.ielts" target="_blank" class="font-bold">Tiktok</a>
+					<a href="https://www.youtube.com/@therealielts5724" target="_blank" class="font-bold">Youtube</a>
 				</div>
 			</div>
 		`
@@ -101,7 +101,7 @@ export default function Overview() {
 	}
 
 	return (
-		<section className="flex flex-col items-center justify-center overview relative" style={{background: `url(${Background.src}) center / cover` }}>
+		<section className="flex flex-col items-center justify-center overview min-h-screen relative" style={{background: `url(${Background.src}) center / cover` }}>
 			<div className="container z-20 text-center py-[10%]">
 				<span className="text-[32px] font-svn">Thông tin chung về</span>
 				<h2 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ IELTS</h2>

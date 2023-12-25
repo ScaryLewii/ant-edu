@@ -7,22 +7,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { type IData } from "./certificate";
+import { useEffect, useRef } from "react";
 
 export default function Carousel1({data}: {data: IData[]}) {
+	const swiperRef = useRef(null);
+
 	return (
 		<Swiper
 			effect={'coverflow'}
-			initialSlide={2}
 			grabCursor={true}
 			centeredSlides={true}
 			slidesPerView={'auto'}
-			coverflowEffect={{
-				rotate: 0,
-				stretch: 10,
-				depth: 100,
-				slideShadows: true,
-			}}
 			modules={[EffectCoverflow]}
+			breakpoints={{
+				768: {
+					initialSlide: 0,
+					coverflowEffect: {
+						rotate: 0,
+						stretch: 1,
+						depth: 50,
+						slideShadows: true,
+					}
+				},
+				1000: {
+					initialSlide: 2,
+					coverflowEffect: {
+						rotate: 0,
+						stretch: 20,
+						depth: 100,
+						slideShadows: true,
+					}
+				}
+			}}
 		>
 			{data.map((d, index) => 
 				<SwiperSlide key={index}>

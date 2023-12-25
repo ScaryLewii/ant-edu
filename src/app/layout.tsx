@@ -38,9 +38,9 @@ export default function RootLayout({
     <html lang="en" className="bg-slate-600 text-white">
       <body className={`font-sans ${svn.variable} ${inter.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
-          <MainNav />
-          {children}
-          <Footer />
+            <MainNav />
+            {children}
+            <Footer />
         </TRPCReactProvider>
       </body>
     </html>

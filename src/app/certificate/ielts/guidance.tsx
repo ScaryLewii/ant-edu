@@ -9,17 +9,15 @@ import SignUpStep from "./steps/step-signup";
 import InfoStep from "./steps/step-info";
 import PracticeStep from "./steps/step-practice";
 import FinalStep from "./steps/step-final";
+import Block from "~/app/_components/layout/block";
 
 export default function Guidance() {
 	const [step, setStep] = useState(0)
 
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center guidance relative">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
-
+		<Block backgroundSrc={Background}>
 			<StepContext.Provider value={{step, setStep}}>
-				<div className="container flex flex-col justify-center items-center z-20 h-full w-">
+				<div className="container flex flex-col justify-center items-center z-20 h-full mx-auto">
 					{step === 0 && <GuideStep />}
 					{step === 1 && <SignUpStep />}
 					{step === 2 && <InfoStep />}
@@ -27,6 +25,6 @@ export default function Guidance() {
 					{step === 5 && <FinalStep />}
 				</div>
 			</StepContext.Provider>
-		</section>
+		</Block>
 	);
 }

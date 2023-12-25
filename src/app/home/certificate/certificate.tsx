@@ -15,6 +15,7 @@ import './styles.css';
 import Link from "next/link";
 import Carousel1 from "./carousel-1";
 import Carousel2 from "./carousel-2";
+import Block from "~/app/_components/layout/block";
 
 export interface IData {
 	imgSrc: StaticImageData
@@ -25,16 +26,16 @@ const data = [
 		imgSrc: C1,
 	},
 	{
-		imgSrc: C2,
+		imgSrc: C3,
 	},
 	{
-		imgSrc: C3,
+		imgSrc: C5,
 	},
 	{
 		imgSrc: C4,
 	},
 	{
-		imgSrc: C5,
+		imgSrc: C2,
 	},
 ]
 
@@ -59,20 +60,13 @@ const bottomNav = [
 
 export default function Certificate() {
 	return (
-		<section className="hidden lg:flex lg:h-screen overflow-hidden flex-col items-center justify-center relative py-[90px] lg:py-0 px-[15px]">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
-
-			<div className="container flex flex-col justify-center items-center z-20 h-full w-">
+		<Block backgroundSrc={Background} childrenClassName="container flex flex-col justify-center items-center z-20 h-full ">
+			<>
 				<h1 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
-				<div className="mx-auto mt-[50px] home-cert hidden lg:block">
+				<div className="mt-[50px] home-cert">
 					<Carousel1 data={data} />
-				</div>
-
-				<div className="mx-auto mt-[50px] home-cert block lg:hidden">
-					<Carousel2 data={data} />
 				</div>
 
 				<nav className="mt-[50px]">
@@ -85,7 +79,7 @@ export default function Certificate() {
 						)}
 					</ul>
 				</nav>
-			</div>
-		</section>
+			</>
+		</Block>
 	);
 }

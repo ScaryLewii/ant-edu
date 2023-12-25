@@ -2,6 +2,7 @@ import Image from "next/image";
 import Background from "public/background/news.jpg";
 import StickyPost from "./sticky-post";
 import Post from "./post";
+import Block from "../_components/layout/block";
 
 const data = [
 	{
@@ -27,11 +28,7 @@ const data = [
 
 export default function News() {
 	return (
-		<main className="flex h-screen overflow-hidden flex-col items-center justify-center">
-			<Image src={Background} width={1920} height={1080} alt="home background"
-				className="absolute top-0 left-0 w-full h-full object-cover" />
-			
-			<div className="bg-[#001730] bg-opacity-40 absolute top-0 right-0 w-[45%] h-full"></div>
+		<Block backgroundSrc={Background}>
 
 			<div className="container flex items-center justify-center z-20 h-full">
 				<div className="w-[60%]">
@@ -46,6 +43,6 @@ export default function News() {
 					)}
 				</div>
 			</div>
-		</main>
+		</Block>
 	);
 }

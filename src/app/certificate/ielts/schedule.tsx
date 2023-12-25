@@ -2,79 +2,44 @@
 
 import Calendar from 'react-calendar';
 import moment from 'moment';
-
-const data = [
-	{
-		date: '08-11-2023',
-		state: 'full',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '09-11-2023',
-		state: 'full',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '15-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '16-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '22-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '23-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '29-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	},
-	{
-		date: '30-11-2023',
-		state: 'offline',
-		location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-	}
-]
+import { useEffect, useState } from 'react';
+import { type ISchedule } from '../schedule.types';
+import Block from '~/app/_components/layout/block';
 
 export default function Schedule() {
+	const [data, setData] = useState<ISchedule[]>([])
+
+	useEffect(() => {
+		const getSchedule = async () => {
+			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations/incoming")
+			const result = await data.text()
+
+			const schedule = JSON.parse(result).data as ISchedule[]
+			setData(schedule.filter(s => s.certificateType === "IELTS"))
+		}
+
+		getSchedule()
+	}, [])
+
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center relative schedule z-20">
-			<div className="container flex justify-between h-full">
+		<Block>
+			<div className="container flex justify-between h-full mx-auto">
 				<div className="flex flex-col items-center justify-center w-[60%]">
 					<div className='flex gap-[36px] items-end'>
 						<div className="bg-white rounded-[25px] p-[45px] text-black">
 							<Calendar 
 								tileClassName={({ date, view }) => {
-									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'full')){
-										return 'full'
-									}
+									// if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x. === 'full')){
+									// 	return 'full'
+									// }
 
-									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'online')) {
-										return 'online'
-									}
-
-									if (data.find(x => x.date === moment(date).format("DD-MM-YYYY") && x.state === 'offline')) {
+									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY"))) {
 										return 'offline'
 									}
 								}} 
 							/>
 
 							<div className="flex gap-[20px] items-center justify-center mt-[40px]">
-								<div className="inline-flex items-center gap-[12px]">
-									<span className="block w-[22px] h-[22px] rounded-full bg-pink"></span>
-									<span>Lịch Online</span>
-								</div>
-
 								<div className="inline-flex items-center gap-[12px]">
 									<span className="block w-[22px] h-[22px] rounded-full bg-cyan"></span>
 									<span>Lịch Offline</span>
@@ -85,12 +50,6 @@ export default function Schedule() {
 									<span>Lịch thi kín</span>
 								</div>
 							</div>
-						</div>
-
-						<div className='mt-[40px] flex flex-col gap-[15px] whitespace-nowrap'>
-							<div><strong>TP.Hà Nội:</strong> 13, 14, 20, 21</div>
-							<div><strong>TP.Đà Nẵng:</strong>: 13, 14, 20, 21</div>
-							<div><strong>TP.Hồ Chí Minh:</strong>: 13, 14, 20, 21</div>
 						</div>
 					</div>
 
@@ -107,6 +66,6 @@ export default function Schedule() {
 					</h2>
 				</div>
 			</div>
-		</section>
+		</Block>
 	);
 }

@@ -45,7 +45,7 @@ const navigations = [
   {
     id: 7,
     name: "Tư vấn",
-    slug: "tu-van"
+    slug: "404"
   },
   {
     id: 4,

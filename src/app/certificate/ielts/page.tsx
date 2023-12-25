@@ -9,140 +9,12 @@ import Pricing from "./pricing";
 import Guidance from "./guidance";
 import Practice from "./practice";
 import Schedule from "./schedule";
-
-export interface ISchedule {
-	date: string,
-	state: 'full' | 'online' | 'offline',
-	location: string[]
-}
+import { type ISchedule } from "../schedule.types";
 
 export interface ICert {
 	title: string,
 	schedule: ISchedule[]
 }
-
-const data: ICert[] = [
-	{
-		title: "ielts",
-		schedule: [
-			{
-			date: '08-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng']
-			},
-			{
-			date: '09-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng']
-			},
-			{
-			date: '16-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng']
-			},
-			{
-			date: '22-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng']
-			},
-			{
-			date: '29-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng']
-			}
-		]
-		},
-		{
-		title: "pte",
-		schedule: [
-			{
-			date: '08-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '09-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '15-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '16-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '22-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '23-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '29-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '30-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			}
-		]
-		},
-		{
-		title: "cefr",
-		schedule: [
-			{
-			date: '08-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '09-11-2023',
-			state: 'full',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '15-11-2023',
-			state: 'online',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '16-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '22-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '23-11-2023',
-			state: 'online',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '29-11-2023',
-			state: 'offline',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			},
-			{
-			date: '30-11-2023',
-			state: 'online',
-			location: ['TP.Hà Nội', 'TP.Đà Nẵng', 'TP.Hồ Chí Minh']
-			}
-		]
-	}
-]
 
 export default function Certificate() {
 	const elementRef = useRef(null)
@@ -243,7 +115,7 @@ export default function Certificate() {
 
 				<Practice />
 
-				<div className="bg-[#001730] bg-opacity-40 absolute bottom-0 h-full blue-box z-10"></div>
+				{/* <div className="bg-[#001730] bg-opacity-40 absolute bottom-0 h-full blue-box z-10"></div> */}
 			</div>
 		</main>
 	);

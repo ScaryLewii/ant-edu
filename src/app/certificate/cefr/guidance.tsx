@@ -14,7 +14,7 @@ export default function Guidance() {
 	const [step, setStep] = useState(0)
 
 	return (
-		<section className="flex h-screen overflow-hidden flex-col items-center justify-center guidance relative">
+		<section className="flex flex-col items-center justify-center guidance relative">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
