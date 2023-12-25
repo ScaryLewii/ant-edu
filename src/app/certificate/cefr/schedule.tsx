@@ -2,7 +2,7 @@
 
 import Calendar from 'react-calendar';
 import moment from 'moment';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { type ISchedule } from '../schedule.types';
 import Block from '~/app/_components/layout/block';
 

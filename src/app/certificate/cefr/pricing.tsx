@@ -63,6 +63,6 @@ export default function Pricing() {
 					</table>
 				</div>
 			</div>
-		</Bloc>
+		</Block>
 	);
 }

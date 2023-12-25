@@ -5,7 +5,6 @@ import Background from "public/background/overview.jpg";
 import Pte1 from "public/static-images/cefr1.jpg";
 import Pte2 from "public/static-images/cefr2.jpg";
 import Pte3 from "public/static-images/cefr3.jpg";
-import Pte5 from "public/static-images/cefr5.jpg";
 import Pte6 from "public/static-images/cefr6.jpg";
 import Pte8 from "public/static-images/cefr8.jpg";
 
