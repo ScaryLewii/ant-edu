@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <Block backgroundSrc={homeHeroBackground}>
-        <div className="container flex flex-col items-center justify-center gap-8 text-center">
+        <div className="container flex flex-col items-center justify-center gap-8 text-center mx-auto">
           <h1 className="text-[26px] max-w-[80%] xl:text-[65px] font-bold text-glow">Trung tâm Khảo thí Ant Edu</h1>
           <i className="xl:text-[26px] max-w-[90%]">Một nút nhấn cho ngàn mục tiêu</i>
         </div>
