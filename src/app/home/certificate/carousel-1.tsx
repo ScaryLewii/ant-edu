@@ -7,11 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { type IData } from "./certificate";
-import { useEffect, useRef } from "react";
 
 export default function Carousel1({data}: {data: IData[]}) {
-	const swiperRef = useRef(null);
-
 	return (
 		<Swiper
 			effect={'coverflow'}

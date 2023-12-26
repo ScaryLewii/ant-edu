@@ -6,6 +6,7 @@ import Decorate from "public/background/decorate.jpg";
 import { useState } from "react";
 import Link from "next/link";
 import { ContactUs, RightArrow } from "../_components/assets/icons";
+import patternBg from "public/background/pattern.png"
 
 export default function Contact() {
 	const [step, setStep] = useState(1)
@@ -110,10 +111,31 @@ Bạn có quyền yêu cầu một bản sao thông tin của bạn mà chúng t
 						</div>
 
 						<div className="text-center">
-							<button className="font-bold text-[18px] py-[15px] px-[86px] bg-cyan hover:bg-opacity-80 rounded-[9px] inline-block mx-auto mt-[30px]">Gửi</button>
+							<button className="font-bold text-[18px] py-[15px] px-[86px] bg-cyan hover:bg-opacity-80 rounded-[9px] inline-block mx-auto mt-[30px]"
+								onClick={() => setStep(3)}
+							>
+								Gửi
+							</button>
 						</div>
 					</form>
 				</div>
+			</section>}
+
+			{step === 3 && <section className="w-full min-h-screen relative z-20 py-[100px] flex items-center">
+
+				<div className="container mx-auto min-h-[600px] flex items-center justify-center bg-[#001730] bg-opacity-40 relative px-[130px] py-[50px] text-center">
+					<Image src={patternBg} width={900} height={478} alt="background" className="absolute bottom-0 left-0 w-full object-cover" />
+					<div className="absolute top-0 left-1/2 -translate-x-1/2 bg-cyan w-1/2 h-[17px] rounded-bl-[20px] rounded-br-[20px]"></div>
+
+					<div className="relative z-10">
+						<h2 className="text-[32px] font-bold text-cyan text-center mb-[30px]">ĐĂNG KÝ THÀNH CÔNG</h2>
+
+						<div className="text-[16px] italic font-medium mt-[80px] mb-[120px]">Cảm ơn bạn đã quan tâm. AI Boosted English đã nhận được thông tin của bạn, <br />và sẽ liên hệ với bạn trong thời gian sớm nhất,</div>
+
+						<Link href="/" className="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Trở về trang chủ</Link>
+					</div>
+				</div>
+
 			</section>}
 		</main>
 	);

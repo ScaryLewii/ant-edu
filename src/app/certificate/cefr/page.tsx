@@ -6,10 +6,9 @@ import { useEffect, useRef } from "react";
 import Overview from "./overview";
 import Pricing from "./pricing";
 
+import { type ISchedule } from "../schedule.types";
 import Guidance from "./guidance";
 import Practice from "./practice";
-import Schedule from "./schedule";
-import { type ISchedule } from "../schedule.types";
 
 export interface ICert {
 	title: string,

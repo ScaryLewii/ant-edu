@@ -5,7 +5,6 @@ import Background from "public/background/overview.jpg";
 import Pte1 from "public/static-images/ielts1.jpg";
 import Pte2 from "public/static-images/ielts2.jpg";
 import Pte3 from "public/static-images/ielts3.jpg";
-import Pte5 from "public/static-images/ielts5.jpg";
 import Pte6 from "public/static-images/ielts6.jpg";
 import Pte8 from "public/static-images/ielts8.jpg";
 

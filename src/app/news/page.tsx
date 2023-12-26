@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Background from "public/background/news.jpg";
-import StickyPost from "./sticky-post";
-import Post from "./post";
 import Block from "../_components/layout/block";
+import Post from "./post";
+import StickyPost from "./sticky-post";
 
 const data = [
 	{

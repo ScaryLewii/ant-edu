@@ -1,10 +1,10 @@
 "use client"
 
-import Calendar from 'react-calendar';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
-import { type ISchedule } from '../schedule.types';
+import Calendar from 'react-calendar';
 import Block from '~/app/_components/layout/block';
+import { type ISchedule } from '../schedule.types';
 
 export default function Schedule() {
 	const [data, setData] = useState<ISchedule[]>([])
@@ -29,7 +29,7 @@ export default function Schedule() {
 					<div className='flex gap-[36px] items-end'>
 						<div className="bg-white rounded-[25px] p-[45px] text-black">
 							<Calendar 
-								tileClassName={({ date, view }) => {
+								tileClassName={({ date }) => {
 									// if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x. === 'full')){
 									// 	return 'full'
 									// }

@@ -1,15 +1,13 @@
 "use client"
 
-import Image from "next/image";
 import Background from "public/background/cert-bg-3.jpg";
 import { useState } from "react";
-import { StepContext } from "~/app/context/context";
-import GuideStep from "./steps/step-guide";
-import SignUpStep from "./steps/step-signup";
-import InfoStep from "./steps/step-info";
-import PracticeStep from "./steps/step-practice";
-import FinalStep from "./steps/step-final";
 import Block from "~/app/_components/layout/block";
+import { StepContext } from "~/app/context/context";
+import FinalStep from "./steps/step-final";
+import GuideStep from "./steps/step-guide";
+import InfoStep from "./steps/step-info";
+import SignUpStep from "./steps/step-signup";
 
 export default function Guidance() {
 	const [step, setStep] = useState(0)

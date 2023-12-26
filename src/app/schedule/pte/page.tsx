@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Background from "public/background/schedule.jpg";
 import Block from "~/app/_components/layout/block";
 import Guidance from "~/app/certificate/pte/guidance";

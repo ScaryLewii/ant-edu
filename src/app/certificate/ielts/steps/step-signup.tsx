@@ -1,10 +1,9 @@
 "use client"
 
-import { type Dispatch, type SetStateAction, useContext } from "react"
-import { StepContext } from "~/app/context/context"
-import Link from "next/link"
-import StepIndex from "./step-index"
+import { useContext, type Dispatch, type SetStateAction } from "react"
 import Input from "~/app/_components/form/input"
+import { StepContext } from "~/app/context/context"
+import StepIndex from "./step-index"
 
 const SignUpStep = () => {
 	const stepContext = useContext(StepContext) as {

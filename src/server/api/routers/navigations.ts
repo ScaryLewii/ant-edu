@@ -1,4 +1,3 @@
-import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
@@ -6,11 +5,13 @@ const navigations = [
   {
     id: 1,
     name: "Về chúng tôi",
+    type: "inline",
     slug: "about"
   },
   {
     id: 2,
     name: "Chứng chỉ",
+    type: "inline",
     slug: "certificate",
     children: [
       {
@@ -33,6 +34,7 @@ const navigations = [
   {
     id: 3,
     name: "Lịch thi thử",
+    type: "inline",
     slug: "schedule",
     children: [
       {
@@ -44,6 +46,7 @@ const navigations = [
   },
   {
     id: 4,
+    type: "inline",
     name: "Tin tức",
     slug: "news"
   },

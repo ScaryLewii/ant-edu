@@ -3,11 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Background from "public/background/practice.jpg";
-import P1 from "public/static-images/p-1.jpg"
-import P2 from "public/static-images/p-2.jpg"
-import P3 from "public/static-images/p-3.jpg"
-import P4 from "public/static-images/p-4.jpg"
-import P5 from "public/static-images/p-5.jpg"
+import P1 from "public/static-images/p-1.jpg";
+import P2 from "public/static-images/p-2.jpg";
+import P3 from "public/static-images/p-3.jpg";
+import P4 from "public/static-images/p-4.jpg";
 
 const data = [
 	{

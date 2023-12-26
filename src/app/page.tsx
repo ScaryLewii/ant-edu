@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </Block>
 
-      <Block backgroundSrc={homeAboutBackground} childrenClassName="container xl:h-screen px-3 flex flex-col xl:flex-row justify-center items-end z-20 h-full pb-[80px] gap-[120px]">
+      <Block id="about" backgroundSrc={homeAboutBackground} childrenClassName="container xl:h-screen px-3 flex flex-col xl:flex-row justify-center items-end z-20 h-full pb-[80px] gap-[120px]">
         <>
           <div className="xl:w-[40%] flex-initial">
             <h1 className="text-[48px] font-bold text-glow">Về chúng tôi</h1>

@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Background from "public/background/schedule.jpg";
 import Block from "~/app/_components/layout/block";
 
 
 export default function Schedule() {
 	return (
-		<Block childrenClassName="container flex flex-wrap items-center justify-around h-full" backgroundSrc={Background}>
+		<Block id="schedule" childrenClassName="container flex flex-wrap items-center justify-around h-full" backgroundSrc={Background}>
 			<>
 				<header className="xl:w-[45%] max-w-[90%]">
 					<h1 className="text-[24px] lg:text-[48px] font-bold mb-[20px] lg:mb-[30px] text-glow">AI BOOSTED ENGLISH</h1>

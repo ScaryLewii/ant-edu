@@ -1,15 +1,9 @@
 "use client"
 
-import { useContext, type Dispatch, type SetStateAction } from "react"
-import { StepContext } from "~/app/context/context"
-import StepIndex from "./step-index"
 import Link from "next/link"
+import StepIndex from "./step-index"
 
 const FinalStep = () => {
-	const stepContext = useContext(StepContext) as {
-		setStep: Dispatch<SetStateAction<number>>,
-	}
-
 	return (
 		<>
 		<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>

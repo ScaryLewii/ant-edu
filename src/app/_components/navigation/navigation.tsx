@@ -6,6 +6,7 @@ import { api } from "~/trpc/server";
 import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
 import SearchInput from "./search-input";
 import GuideBtn from "./guide-btn";
+import NavItem from "./nav-item";
 
 export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
@@ -25,24 +26,7 @@ export default async function MainNav() {
 				<ul className="flex
 				font-semibold text-[13px]">
 					{navItems.map(item => 
-						<li key={item.id} className="relative group">
-							<Link className="px-[15px] py-[7px] rounded-[20px] group-hover:bg-white group-hover:text-black flex" href={`/${item.slug}`}>{item.name}</Link>
-							{item.children &&
-								<div className="p-[22px] absolute top-full -left-[70%] hidden group-hover:block">
-									<ul className="flex flex-col gap-[16px] p-[30px]
-										backdrop-blur-md bg-[#00313D] bg-opacity-[0.05]
-										rounded-[20px] border border-[#00313D] border-opacity-[0.01]
-										shadow-[0px 4px 40px 0px] shadow-[rgba(0, 0, 0, 0.10)]
-									">
-									{item.children.map(child => 
-										<li key={child.id} className="flex">
-											<Link className="p-[10px] text-center w-full min-w-[260px] border border-white rounded-[20px] hover:bg-white hover:text-black whitespace-nowrap" href={`/${child.slug}`}>{child.name}</Link>
-										</li>
-									)}
-								</ul>
-								</div>
-							}
-						</li>
+						<NavItem key={item.id} item={item} />
 					)}
 				</ul>
 			</nav>

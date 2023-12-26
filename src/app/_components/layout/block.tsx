@@ -1,15 +1,16 @@
 import { type ReactNode } from "react";
 import Image, { type StaticImageData } from "next/image";
 
-export default function Block({children, extraChildren, className, backgroundSrc, childrenClassName} : {
+export default function Block({children, extraChildren, id, className, backgroundSrc, childrenClassName} : {
 	className?: string,
+	id?: string,
 	children?: ReactNode | JSX.Element,
 	childrenClassName?: string,
 	backgroundSrc?: StaticImageData,
 	extraChildren?: JSX.Element
 }) {
 	return (
-		<section className={`${className}
+		<section id={id} className={`${className}
 			flex flex-col items-center justify-center relative min-h-screen w-full overflow-hidden snap-center
 		`}>
 			{backgroundSrc &&

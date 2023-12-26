@@ -7,7 +7,6 @@ import { StepContext } from "~/app/context/context";
 import FinalStep from "./steps/step-final";
 import GuideStep from "./steps/step-guide";
 import InfoStep from "./steps/step-info";
-import PracticeStep from "./steps/step-practice";
 import SignUpStep from "./steps/step-signup";
 
 export default function Guidance() {

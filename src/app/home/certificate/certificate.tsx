@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 import Background from "public/background/certificate.jpg";
 import C2 from "public/static-images/c-2.jpg";
 import C3 from "public/static-images/c-3.jpg";
@@ -13,9 +13,8 @@ import 'swiper/css/effect-coverflow';
 import './styles.css';
 
 import Link from "next/link";
-import Carousel1 from "./carousel-1";
-import Carousel2 from "./carousel-2";
 import Block from "~/app/_components/layout/block";
+import Carousel1 from "./carousel-1";
 
 export interface IData {
 	imgSrc: StaticImageData
@@ -60,7 +59,7 @@ const bottomNav = [
 
 export default function Certificate() {
 	return (
-		<Block backgroundSrc={Background} childrenClassName="container flex flex-col justify-center items-center z-20 h-full ">
+		<Block id="certificate" backgroundSrc={Background} childrenClassName="container flex flex-col justify-center items-center z-20 h-full ">
 			<>
 				<h1 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h1>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>

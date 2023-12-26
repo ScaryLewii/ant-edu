@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Background from "public/background/news.jpg";
-import StickyPost from "./sticky-post";
-import Post from "~/app/news/post";
-import Block from "~/app/_components/layout/block";
 import ScrollDownArrow from "~/app/_components/assets/scroll-down-arrow";
+import Block from "~/app/_components/layout/block";
+import Post from "~/app/news/post";
+import StickyPost from "./sticky-post";
 
 const data = [
 	{
@@ -55,7 +54,7 @@ const extraChildren = () => (
 
 export default function News() {
 	return (
-		<Block backgroundSrc={Background} extraChildren={extraChildren()}
+		<Block id="news" backgroundSrc={Background} extraChildren={extraChildren()}
 			childrenClassName="container flex flex-col lg:flex-row items-center justify-center z-[2] h-full px-[15px] py-[90px] xl:py-0"
 		>
 		</Block>

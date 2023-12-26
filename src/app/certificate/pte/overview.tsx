@@ -1,23 +1,21 @@
 "use client"
 
 import Image from "next/image";
-import Background from "public/background/overview.jpg"
-import Pte1 from "public/static-images/pte1.jpg"
-import Pte2 from "public/static-images/pte2.jpg"
-import Pte3 from "public/static-images/pte3.jpg"
-import Pte4 from "public/static-images/pte4.jpg"
-import Pte5 from "public/static-images/pte5.jpg"
-import Pte6 from "public/static-images/pte6.jpg"
-import Pte7 from "public/static-images/pte7.jpg"
-import Pte8 from "public/static-images/pte8.jpg"
+import Background from "public/background/overview.jpg";
+import Pte1 from "public/static-images/pte1.jpg";
+import Pte2 from "public/static-images/pte2.jpg";
+import Pte3 from "public/static-images/pte3.jpg";
+import Pte5 from "public/static-images/pte5.jpg";
+import Pte6 from "public/static-images/pte6.jpg";
+import Pte8 from "public/static-images/pte8.jpg";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import './styles.css'
+import './styles.css';
 
+import { useState } from "react";
 import { Navigation } from "swiper/modules";
-import { useRef, useState } from "react";
 
 const data = [
 	{
