@@ -14,11 +14,12 @@ export default function Schedule() {
 			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations/incoming")
 			const result = await data.text()
 
-			const schedule = JSON.parse(result).data as ISchedule[]
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+			const schedule = JSON.parse(result).data as unknown as ISchedule[] || []
 			setData(schedule.filter(s => s.certificateType === "CEFR"))
 		}
 
-		getSchedule()
+		getSchedule().catch(error => console.log(error))
 	}, [])
 	
 	return (

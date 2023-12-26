@@ -32,11 +32,6 @@ const data = [
 				<strong>Trình độ B2:</strong> TOEIC 455-750 tương đương với IELTS 5.0-6.0<br>
 				<strong>Trình độ C1:</strong> TOEIC 755-850 tương đương với IELTS 7.0-8.0<br>
 				<strong>Trình độ C2:</strong> TOEIC 855-990 tương đương với IELTS 8.5-9.0<br>
-			
-				<div class="mt-8 flex items-center justify-center gap-[30px]">
-					<a href="#" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Xem lịch thi chính thức</a>
-					<a href="#" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký thi chính thức</a>
-				</div>
 			</div>
 		`
 	},
@@ -53,7 +48,7 @@ const data = [
 			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="/404" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
 			</div>
 		</div>`
 	},

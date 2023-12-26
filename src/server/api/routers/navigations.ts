@@ -43,81 +43,14 @@ const navigations = [
     ]
   },
   {
-    id: 7,
-    name: "Tư vấn",
-    slug: "404"
-  },
-  {
     id: 4,
     name: "Tin tức",
     slug: "news"
   },
-  // {
-  //   id: 5,
-  //   name: "Cộng đồng",
-  //   slug: "community",
-  //   children: [
-  //     {
-  //       id: 5.1,
-  //       name: "The Real IELTS",
-  //       slug: "the-real-ielts"
-  //     },
-  //     {
-  //       id: 5.2,
-  //       name: "Lingo Speak",
-  //       slug: "lingo-speak"
-  //     },
-  //     {
-  //       id: 5.3,
-  //       name: "IELTS on Video",
-  //       slug: "ielts-on-video"
-  //     },
-  //     {
-  //       id: 5.4,
-  //       name: "PTE",
-  //       slug: "pte"
-  //     },
-  //   ]
-  // },
-  // {
-  //   id: 6,
-  //   name: "Tài liệu",
-  //   slug: "tai-lieu",
-  //   children: [
-  //     {
-  //       id: 6.1,
-  //       name: "IELTS",
-  //       slug: "tai-lieu-ielts"
-  //     },
-  //     {
-  //       id: 6.2,
-  //       name: "PTE",
-  //       slug: "tai-lieu-pte"
-  //     },
-  //     {
-  //       id: 6.3,
-  //       name: "CEFR",
-  //       slug: "tai-lieu-cefr"
-  //     }
-  //   ]
-  // },
- 
-  // {
-  //   id: 8,
-  //   name: "Đối tác",
-  //   slug: "partner"
-  // },
   {
     id: 9,
     name: "Liên hệ",
-    slug: "contact",
-    children: [
-      {
-        id: 9.1,
-        name: "Kiểm tra trình độ",
-        slug: "test-register"
-      },
-    ]
+    slug: "test-register",
   },
 ];
 

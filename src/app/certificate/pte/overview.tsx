@@ -55,7 +55,7 @@ const data = [
 			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="/404" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
 			</div>
 		</div>`
 	},

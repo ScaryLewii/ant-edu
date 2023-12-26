@@ -1,13 +1,22 @@
+"use client"
+
 import Image from "next/image";
-import Background from "public/background/contact.jpg";
-import FacebookPage from "./facebook";
 import Link from "next/link";
-import Logo from "public/logo-big.png"
+import { usePathname } from "next/navigation";
+import Background from "public/background/contact.jpg";
+import Logo from "public/logo-big.png";
 import { FacebookIcon, InstagramIcon, TiktokIcon } from "../assets/icons";
+import FacebookPage from "./facebook";
 
 export default function Footer() {
+	const pathName = usePathname()
+
+	if (pathName.includes('test-register')) {
+		return <></>
+	}
+
 	return (
-		<section className="flex flex-col items-center justify-center relative px-[15px] pt-[90px] pb-[40px]">
+		<footer className="flex flex-col items-center justify-center relative px-[15px] pt-[90px] pb-[40px]">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
@@ -48,6 +57,6 @@ export default function Footer() {
 
 				<FacebookPage />
 			</div>
-		</section>
+		</footer>
 	);
 }

@@ -21,8 +21,7 @@ export default function Guidance() {
 					{step === 0 && <GuideStep />}
 					{step === 1 && <SignUpStep />}
 					{step === 2 && <InfoStep />}
-					{step === 3 && <PracticeStep />}
-					{step === 5 && <FinalStep />}
+					{step === 3 && <FinalStep />}
 				</div>
 			</StepContext.Provider>
 		</Block>

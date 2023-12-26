@@ -13,14 +13,6 @@ const data = [
 	},
 	{
 		index: 3,
-		label: "Luyện tập"
-	},
-	{
-		index: 4,
-		label: "Thi"
-	},
-	{
-		index: 5,
 		label: "Nhận kết quả"
 	},
 ]

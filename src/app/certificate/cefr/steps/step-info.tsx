@@ -40,7 +40,7 @@ const InfoStep = () => {
 				<Input label="Surname / family name" type="text" placeholder="Enter here" />
 				<Input label="Your contact details" type="text" placeholder="Enter here" />
 				<Input label="Date of birth" type="date" placeholder="dd / mm / yyyy" />
-				<Input label="Postal address" type="date" placeholder="Enter here" />
+				<Input label="Postal address" type="text" placeholder="Enter here" />
 			</div>
 		}
 

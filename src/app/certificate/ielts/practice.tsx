@@ -16,7 +16,7 @@ const data = [
 		imgSrc: P1,
 		content: "Cung cấp kiểm tra trình độ tiếng Anh với các bài test 4 kỹ năng áp dụng công nghệ AI, nhận kết quả ngay sau 72 giờ.",
 		btnLabel: "Test ngay",
-		url: "#"
+		url: "https://ant-edu.ai/#testlist"
 	},
 	{
 		title: "Các khóa học cơ bản",

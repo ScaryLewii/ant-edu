@@ -11,7 +11,7 @@ export default function Contact() {
 	const [step, setStep] = useState(1)
 	
 	return (
-		<main className="flex flex-col items-center justify-center relative">
+		<main className="flex flex-col items-center justify-center relative min-h-screen">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 

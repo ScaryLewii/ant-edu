@@ -51,7 +51,7 @@ const data = [
 			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="/404" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
 			</div>
 		</div>`
 	},
@@ -69,11 +69,6 @@ const data = [
 				</div>
 			</div>
 		`
-	},
-	{
-		title: "Các cấp trình độ",
-		imgSrc: Pte5,
-		content: "<p><strong>Chứng chỉ IELTS</strong> (International English Language Testing System) là một trong những chứng chỉ tiếng Anh quốc tế phổ biến nhất. Nó được công nhận rộng rãi và được sử dụng để đánh giá khả năng sử dụng tiếng Anh trong môi trường học tập, làm việc và giao tiếp hàng ngày. <br/><br/><strong>IELTS có hai hình thức thi chính:</strong> IELTS Academic dành cho người học muốn du học hoặc nghiên cứu ở nước ngoài, và IELTS General Training dành cho mục đích di cư hoặc làm việc ở nước ngoài. Chứng chỉ này đo lường bốn kỹ năng: Nghe, Đọc, Viết và Nói.</p>"
 	},
 	{
 		title: "Cộng đồng",

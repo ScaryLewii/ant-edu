@@ -15,7 +15,7 @@ const data = [
 		imgSrc: P1,
 		content: "Cung cấp kiểm tra trình độ tiếng Anh với các bài test 4 kỹ năng áp dụng công nghệ AI, nhận kết quả ngay sau 72 giờ.",
 		btnLabel: "Test ngay",
-		url: "#"
+		url: "https://ant-edu.ai/#testlist"
 	},
 	{
 		title: "Các khóa học cơ bản",
@@ -35,13 +35,6 @@ const data = [
 		title: "Tài liệu ôn thi",
 		imgSrc: P4,
 		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi IELTS có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
-		btnLabel: "Chi tiết",
-		url: "#"
-	},
-	{
-		title: "Mẹo thi IELTS",
-		imgSrc: P5,
-		content: 'Hãy cùng khám phá các "Trick" để đạt điểm tối đa trong bài thi IELTS nhé',
 		btnLabel: "Chi tiết",
 		url: "#"
 	},

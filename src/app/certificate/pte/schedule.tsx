@@ -14,11 +14,12 @@ export default function Schedule() {
 			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations/incoming")
 			const result = await data.text()
 
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			const schedule = JSON.parse(result).data as ISchedule[]
 			setData(schedule.filter(s => s.certificateType === "PTE"))
 		}
 
-		getSchedule()
+		getSchedule().catch(error => console.log(error))
 	}, [])
 
 	return (

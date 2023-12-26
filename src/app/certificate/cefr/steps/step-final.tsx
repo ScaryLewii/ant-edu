@@ -30,9 +30,9 @@ const FinalStep = () => {
 				Trở lại trang chủ
 			</Link>
 
-			<button className="bg-cyan hover:bg-opacity-80 px-[24px] py-[12px] rounded-[9px]">
+			<Link href="https://ant-edu.ai/auth/login" className="bg-cyan hover:bg-opacity-80 px-[24px] py-[12px] rounded-[9px]">
 				Kiểm tra lịch thi
-			</button>
+			</Link>
 		</div>
 		</>
 	)

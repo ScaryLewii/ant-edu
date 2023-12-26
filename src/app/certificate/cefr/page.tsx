@@ -107,8 +107,6 @@ export default function Certificate() {
 			<div className="relative overflow-hidden">
 				<div className="parallax">
 					<Pricing />
-
-					<Schedule />
 				</div>
 
 				<Guidance />
