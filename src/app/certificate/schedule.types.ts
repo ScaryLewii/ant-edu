@@ -8,7 +8,7 @@ export interface ISchedule {
 	status: "SCHEDULED",
 	thumbnail: string | null,
 	maxParticipants: number,
-	examinationType: "Online",
+	examinationType: "Online" | "Offline",
 	certificateType: "IELTS" | "PTE" | "CEFR",
 	address: string | null,
 	price: number,

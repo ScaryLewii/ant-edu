@@ -30,12 +30,12 @@ export default function Schedule() {
 						<div className="bg-white rounded-[25px] p-[45px] text-black">
 							<Calendar 
 								tileClassName={({ date }) => {
-									// if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x. === 'full')){
-									// 	return 'full'
-									// }
-
-									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY"))) {
+									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x.examinationType === "Offline")){
 										return 'offline'
+									}
+
+									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x.examinationType === "Online")) {
+										return 'online'
 									}
 								}} 
 							/>
