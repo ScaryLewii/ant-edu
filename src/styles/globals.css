@@ -178,7 +178,7 @@ abbr {
 	align-items: center;
 }
 
-.full {
+.online {
 	--date--bg: #F1F1F1;
 	color: #909090;
 }
@@ -188,9 +188,11 @@ abbr {
 	color: #fff;
 }
 
-.online {
-	--date--bg: #FF8181;
-	color: #fff;
+.parallax {
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar-track

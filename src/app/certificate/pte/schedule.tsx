@@ -11,11 +11,11 @@ export default function Schedule() {
 
 	useEffect(() => {
 		const getSchedule = async () => {
-			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations/incoming")
+			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations?Page=1&PageSize=100")
 			const result = await data.text()
 
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-			const schedule = JSON.parse(result).data as ISchedule[]
+			const schedule = JSON.parse(result).data.items as ISchedule[]
 			setData(schedule.filter(s => s.certificateType === "PTE"))
 		}
 

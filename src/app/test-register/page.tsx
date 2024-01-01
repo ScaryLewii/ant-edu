@@ -8,8 +8,44 @@ import Link from "next/link";
 import { ContactUs, RightArrow } from "../_components/assets/icons";
 import patternBg from "public/background/pattern.png"
 
+interface IFormData {
+	fullname: string;
+	email: string;
+	phone: string;
+	title: string;
+	content: string;
+}
+
 export default function Contact() {
 	const [step, setStep] = useState(1)
+	const [formData, setFormData] = useState<IFormData>({
+		fullname: '',
+		email: '',
+		phone: '',
+		title: '',
+		content: '',
+	})
+
+	const handleSubmit = async () => {
+		const requestInit: RequestInit = { 
+			headers: {
+				"Content-Type": "application/json",
+			},
+			method: 'POST',
+			body: JSON.stringify(formData)
+		}
+		const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "fqa-systems", requestInit)
+		const result = await data.text()
+		const jsonResult = JSON.parse(result) as {
+			data: object,
+			isSuccess: boolean,
+			errors: object
+		}
+
+		if (jsonResult.isSuccess) {
+			setStep(3)
+		}
+	}
 	
 	return (
 		<main className="flex flex-col items-center justify-center relative min-h-screen">
@@ -55,19 +91,20 @@ export default function Contact() {
 
 					<h2 className="text-[32px] font-bold text-cyan text-center mb-[30px]">Gửi tin nhắn</h2>
 
-					<form>
+					<form action={handleSubmit}>
 						<div className="flex justify-between">
 							<div className="flex flex-col gap-[20px] w-[45%]">
 								<label className="font-bold">Họ và tên *</label>
-								<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
+								<input type="text" onChange={e => setFormData(data => ({...data, fullname: e.target.value}))} placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
 							</div>
 
 							<div className="flex flex-col gap-[20px] w-[45%]">
 								<label htmlFor="city" className="font-bold">Câu hỏi của bạn là về?</label>
-								<select id="city" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]">
-									<option className="text-black" value="HN">Khóa học IELTS offline tại Hà Nội</option>
-									<option className="text-black" value="DN">Khóa học IELTS online</option>
-									<option className="text-black" value="DN">Khóa học Tiếng Anh online</option>
+								<select id="city" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, title: e.target.value}))}>
+									<option className="text-black" value="">Chọn câu hỏi</option>
+									<option className="text-black" value="Khóa học IELTS offline tại Hà Nội">Khóa học IELTS offline tại Hà Nội</option>
+									<option className="text-black" value="Khóa học IELTS online">Khóa học IELTS online</option>
+									<option className="text-black" value="Khóa học Tiếng Anh online">Khóa học Tiếng Anh online</option>
 								</select>
 							</div>
 						</div>
@@ -76,18 +113,18 @@ export default function Contact() {
 							<div className="flex flex-col gap-[20px] w-[45%]">
 								<div className="flex flex-col gap-[20px]">
 									<label className="font-bold">Email  *</label>
-									<input type="email" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
+									<input type="email" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, email: e.target.value}))} />
 								</div>
 
 								<div className="flex flex-col gap-[20px]">
 									<label className="font-bold">Số điện thoại *</label>
-									<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
+									<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, phone: e.target.value}))} />
 								</div>
 							</div>
 
 							<div className="flex flex-col gap-[20px] w-[45%]">
 								<label className="font-bold">Câu hỏi</label>
-								<textarea placeholder="Viết câu hỏi của bạn tại đây..." className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px] h-full" />
+								<textarea placeholder="Viết câu hỏi của bạn tại đây..." className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px] h-full" onChange={e => setFormData(data => ({...data, content: e.target.value}))} />
 							</div>
 						</div>
 
@@ -111,9 +148,7 @@ Bạn có quyền yêu cầu một bản sao thông tin của bạn mà chúng t
 						</div>
 
 						<div className="text-center">
-							<button className="font-bold text-[18px] py-[15px] px-[86px] bg-cyan hover:bg-opacity-80 rounded-[9px] inline-block mx-auto mt-[30px]"
-								onClick={() => setStep(3)}
-							>
+							<button className="font-bold text-[18px] py-[15px] px-[86px] bg-cyan hover:bg-opacity-80 rounded-[9px] inline-block mx-auto mt-[30px]">
 								Gửi
 							</button>
 						</div>

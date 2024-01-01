@@ -1,14 +1,16 @@
-import homeHeroBackground from "public/background/main-bg.jpg"
+"use client"
+
 import homeAboutBackground from "public/background/about-bg.jpg";
+import homeHeroBackground from "public/background/main-bg.jpg";
+import { useRef } from "react";
+import Block from "./_components/layout/block";
 import Certificate from "./home/certificate/certificate";
-import Schedule from "./home/schedule/schedule";
 import News from "./home/news/news";
 import Partner from "./home/partner/partner";
-import Block from "./_components/layout/block";
+import Schedule from "./home/schedule/schedule";
 import Slider from "./home/slider";
 
 export default function Home() {
-
   return (
     <main>
       <Block backgroundSrc={homeHeroBackground}>

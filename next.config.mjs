@@ -7,7 +7,7 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
 	generateBuildId: () => {
-		return '2023-12-28-01'
+		return '2024-1-2-01'
 	},
 };
 

@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import * as Scroll from "react-scroll"
 
 export default function NavItem({item}: {
@@ -16,18 +17,25 @@ export default function NavItem({item}: {
 		}[]
 	}
 }) {
+	const pathname = usePathname()
 	const CustomLink = Scroll.Link
+
 	return (
 		<li className="relative group">
 			{!item.type && 
 				<Link className="px-[15px] py-[7px] rounded-[20px] group-hover:bg-white group-hover:text-black flex" href={`/${item.slug}`}>{item.name}</Link>
 			}
-			{item.type && 
+
+			{item.type && pathname.length < 2 &&
 				<CustomLink to={item.slug} spy={true} smooth={true} offset={0} duration={500}
 					className="px-[15px] py-[7px] rounded-[20px] group-hover:bg-white group-hover:text-black flex cursor-pointer"
 				>
 					{item.name}
 				</CustomLink>
+			}
+
+			{item.type && pathname.length > 1 &&
+				<Link className="px-[15px] py-[7px] rounded-[20px] group-hover:bg-white group-hover:text-black flex" href={`/#${item.slug}`}>{item.name}</Link>
 			}
 			
 			{item.children &&
