@@ -2,7 +2,6 @@
 
 import homeAboutBackground from "public/background/about-bg.jpg";
 import homeHeroBackground from "public/background/main-bg.jpg";
-import { useRef } from "react";
 import Block from "./_components/layout/block";
 import Certificate from "./home/certificate/certificate";
 import News from "./home/news/news";
