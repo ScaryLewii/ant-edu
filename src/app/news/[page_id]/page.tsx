@@ -1,5 +1,28 @@
+"use client"
+import { error } from "console";
+import { usePathname } from "next/navigation";
 import Background from "public/background/news.jpg";
+import { useEffect, useState } from "react";
 import Block from "~/app/_components/layout/block";
+
+type PostData = {
+	id: number;
+	title: string;
+	description: string;
+	author: string;
+	categoryId: number;
+	keywords: string;
+	views: number;
+	content: string;
+	age?: number;
+	active: boolean;
+	thumbnail: string;
+	createdAt: string;
+	updatedAt: string;
+	createdBy?: string;
+	updatedBy: number;
+	type: string;
+}
 
 const data = {
 	title: "10 ngày trước kì thi PTE - Những lưu ý trước ngày thi bạn cần biết",
@@ -14,16 +37,35 @@ const data = {
 }
 
 export default function News() {
+	const pathname = usePathname()
+	const postId = pathname.split("/").pop()
+
+	const [data, setData] = useState<PostData>()
+
+	useEffect(() => {
+		const getPostData = async () => {
+			const request = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "posts/" + postId)
+			const result = await request.text()
+
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+			setData(JSON.parse(result).data as unknown as PostData)
+		}
+
+		getPostData().catch(error => console.error(error))
+	}, [postId])
+
 	return (
 		<Block backgroundSrc={Background} backgroundArticle={true} className="bg-sea">
-			<article className="container mx-auto max-w-[1040px] mt-[30%] mb-[120px]">
-				<h1 className="text-center text-cyan text-[40px] font-bold">{data.title}</h1>
-				<span className="mx-auto block text-center">{data.date}</span>
+			{data && 
+				<article className="container mx-auto max-w-[1040px] mt-[30%] mb-[120px]">
+					<h1 className="text-center text-cyan text-[40px] font-bold">{data.title}</h1>
+					<span className="mx-auto block text-center">{data.createdAt}</span>
 
-				<div className="text-justify mt-[140px] flex flex-col gap-[40px]" dangerouslySetInnerHTML={{__html: data.excerpt}}>
-				</div>
-			</article>
-			
+					<div className="text-justify mt-[140px] flex flex-col gap-[40px]" dangerouslySetInnerHTML={{__html: data.content}}>
+					</div>
+				</article>
+			}
 		</Block>
 	);
 }
+
