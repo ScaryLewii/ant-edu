@@ -7,7 +7,19 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
 	generateBuildId: () => {
-		return '2024-1-4-01'
+		return '2024-1-10-01'
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'placehold.co',
+			},
+			{
+				protocol: 'https',
+				hostname: 'localhost',
+			},
+		],
 	},
 };
 
