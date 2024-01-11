@@ -5,7 +5,7 @@ import moment from "moment";
 export default function StickyPost({data}: {data: INews}) {
 	return (
 		<article className="xl:max-w-[500px]">
-			<Link href={`/${data.id}`} className="text-[30px] uppercase font-semibold hover:text-cyan">{data.title}</Link>
+			<Link href={`/news/${data.id}`} className="text-[30px] uppercase font-semibold hover:text-cyan">{data.title}</Link>
 			<div className="my-[18px]">{moment(data.createdAt).format("DD/MM/YYYY")} | <span className="uppercase">{data.type}</span></div>
 			<p>{data.description} <Link href={`/news/${data.id}`} className="italic font-semibold underline">Đọc tiếp</Link></p>
 
