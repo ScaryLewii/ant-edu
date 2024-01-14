@@ -40,19 +40,19 @@ const data = [
 
 const bottomNav = [
 	{
-		href: "#",
+		href: "/certificate/pte",
 		label: "Tổng quan"
 	},
 	{
-		href: "#",
+		href: "/",
 		label: "Cẩm nang luyện thi"
 	},
 	{
-		href: "#",
+		href: "/",
 		label: "Bí kíp về đích"
 	},
 	{
-		href: "#",
+		href: "https://ant-edu.ai/#testlist",
 		label: "Đánh giá năng lực"
 	}
 ]

@@ -52,7 +52,7 @@ export default function Slider() {
 							rounded-[14px] relative w-[150px] h-[315px] overflow-hidden transition-all duration-300
 							${activeIndex !== 0 ? activeIndex === d.id ? "w-[150px]" : "w-[30px]" : "w-[150px]"}
 						`}
-						onClick={() => setActiveIndex(d.id)}
+						onMouseEnter={() => setActiveIndex(d.id)}
 					>
 						<Image src={d.imgSrc} alt={d.title} className="absolute h-full object-cover" />
 						{activeIndex == 0 &&

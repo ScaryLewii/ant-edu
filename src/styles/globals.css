@@ -198,16 +198,16 @@ abbr {
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+	background-color: #565656;
 }
 
 ::-webkit-scrollbar
 {
-	width: 5px;
+	width: 10px;
 	background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #001730;
+	background-color: #fff;
 }

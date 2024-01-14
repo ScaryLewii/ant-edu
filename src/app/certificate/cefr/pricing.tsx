@@ -33,7 +33,7 @@ const data = [
 export default function Pricing() {
 	return (
 		<Block>
-			<div className="container flex justify-between h-full">
+			<div className="container mx-auto flex justify-between h-full">
 				<div className="flex flex-col justify-center text-box-1">
 					<i className="font-svn text-[32px]">Thông tin về</i>
 					<h2 className="font-bold text-[40px] text-[#FEE7B5]">

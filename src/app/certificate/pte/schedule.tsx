@@ -55,8 +55,7 @@ export default function Schedule() {
 					</div>
 
 					<div className='mt-[55px]'>
-					Thời gian cấp chứng chỉ <br />
-					<i>* Sau khi hoàn thành kỳ thi, thí sinh sẽ nhận được kết quả và chứng chỉ PTE qua email sau <strong>khoảng 5-7 ngày</strong> làm việc.</i>
+					Bạn sẽ được trải nghiệm thi thử trên môi trường khảo thí thật 100% hoàn toàn miễn phí
 					</div>
 				</div>
 

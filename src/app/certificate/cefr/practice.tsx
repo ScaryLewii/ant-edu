@@ -41,7 +41,7 @@ const data = [
 
 export default function Practice() {
 	return (
-		<section className="flex flex-col items-center justify-center practice relative">
+		<section className="flex flex-col items-center justify-center practice relative min-h-screen">
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 

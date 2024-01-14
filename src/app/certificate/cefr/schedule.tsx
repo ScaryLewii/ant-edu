@@ -56,7 +56,7 @@ export default function Schedule() {
 
 					<div className='mt-[55px]'>
 					Thời gian cấp chứng chỉ <br />
-					<i>* Sau khi hoàn thành kỳ thi, thí sinh sẽ nhận được kết quả và chứng chỉ PTE qua email sau <strong>khoảng 5-7 ngày</strong> làm việc.</i>
+					<i>* Kết quả và chứng chỉ CEFR sẽ được gửi qua email sau khoảng <strong>khoảng 3-4 tuần</strong> kể từ ngày thi.</i>
 					</div>
 				</div>
 

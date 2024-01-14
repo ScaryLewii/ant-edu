@@ -108,11 +108,11 @@ export default function Certificate() {
 					<Pricing />
 				</div>
 
-				<Guidance />
+				{/* <Guidance /> */}
 
-				<Practice />
+				{/* <Practice /> */}
 
-				<div className="bg-[#001730] bg-opacity-40 absolute bottom-0 h-full blue-box z-10"></div>
+				{/* <div className="bg-[#001730] bg-opacity-40 absolute bottom-0 h-full blue-box z-10"></div> */}
 			</div>
 		</main>
 	);

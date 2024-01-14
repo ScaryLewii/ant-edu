@@ -63,7 +63,7 @@ export default function Schedule() {
 				<div className="flex flex-col justify-center pr-[5%] text-box-2">
 					<i className="font-svn text-[32px]">Thông tin về</i>
 					<h2 className="font-bold text-[40px] text-[#FEE7B5]">
-						Lịch thi PTE
+						Lịch thi IELTS
 					</h2>
 				</div>
 			</div>
