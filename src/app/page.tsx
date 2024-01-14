@@ -22,7 +22,7 @@ export default function Home() {
       <Block id="about" backgroundSrc={homeAboutBackground} childrenClassName="container xl:h-screen px-3 flex flex-col xl:flex-row justify-center items-end z-20 h-full pb-[80px] gap-[120px]">
         <>
           <div className="xl:w-[40%] flex-initial">
-            <h1 className="text-[48px] font-bold text-glow">Về chúng tôi</h1>
+            <h2 className="text-[48px] font-bold text-glow">Về chúng tôi</h2>
             <div className="mt-[30px]">
             <span className="font-bold text-cyan italic">Ant Edu</span> là hệ thống giáo dục đào tạo trực tuyến thuộc Ant Group. Với sự đầu tư lớn vào công nghệ và đội ngũ nhân sự chất lượng cao, giàu kinh nghiệm; Ant Edu là đơn vị tiên phong trong việc cá nhân hóa lộ trình của người học dựa trên nền tảng công nghệ.
             </div>

@@ -61,7 +61,7 @@ export default function Certificate() {
 	return (
 		<Block id="certificate" backgroundSrc={Background} childrenClassName="container flex flex-col justify-center items-center z-20 h-full ">
 			<>
-				<h1 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h1>
+				<h2 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h2>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
 				<div className="mt-[50px] home-cert">

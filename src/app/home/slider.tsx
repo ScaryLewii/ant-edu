@@ -78,7 +78,7 @@ export default function Slider() {
 							<div className={`flex flex-col gap-[20px] items-center justify-center text-center transition-all duration-[5000]
 								${activeIndex === d.id ? "opacity-100" : "opacity-0"}`}
 							>
-								<h2 className="text-[24px] text-cyan font-bold ">{d.title}</h2>
+								<h3 className="text-[24px] text-cyan font-bold ">{d.title}</h3>
 								<p>{d.content}</p>
 							</div>
 						</div>

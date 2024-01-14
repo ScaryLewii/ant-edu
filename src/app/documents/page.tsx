@@ -30,7 +30,7 @@ export default function NewsPage() {
 			{data?.[0] && 
 				<article className="container mx-auto max-w-[900px] mt-[30%] mb-[160px] text-center">
 					<Link href={'news/' + data[0].id}>
-						<h1 className="text-center text-white text-[40px] font-bold">{data[0].title}</h1>
+						<h2 className="text-center text-white text-[40px] font-bold">{data[0].title}</h2>
 					</Link>
 					<div className="text-white my-[18px]">{moment(data[0].createdAt).format("DD/MM/YYYY")} | <span className="uppercase">{data[0].type}</span></div>
 
