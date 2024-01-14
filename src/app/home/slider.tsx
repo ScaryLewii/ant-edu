@@ -75,7 +75,7 @@ export default function Slider() {
 								${activeIndex === d.id ? "-translate-y-1/2 block" : "-translate-y-1/3 none"}
 							`}
 						>
-							<div className={`flex flex-col gap-[20px] items-center justify-center  transition-all duration-[5000]
+							<div className={`flex flex-col gap-[20px] items-center justify-center text-center transition-all duration-[5000]
 								${activeIndex === d.id ? "opacity-100" : "opacity-0"}`}
 							>
 								<h2 className="text-[24px] text-cyan font-bold ">{d.title}</h2>
