@@ -18,13 +18,13 @@ const data = [
 		btnLabel: "Test ngay",
 		url: "https://ant-edu.ai/#testlist"
 	},
-	{
-		title: "Các khóa học cơ bản",
-		imgSrc: P2,
-		content: "Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.",
-		btnLabel: "Chi tiết",
-		url: "#"
-	},
+	// {
+	// 	title: "Các khóa học cơ bản",
+	// 	imgSrc: P2,
+	// 	content: "Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.",
+	// 	btnLabel: "Chi tiết",
+	// 	url: "#"
+	// },
 	{
 		title: "Các khóa học luyện thi",
 		imgSrc: P3,
