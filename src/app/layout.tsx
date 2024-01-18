@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-
+import { GoogleTagManager } from '@next/third-parties/google'
 import localFont from "next/font/local"
 import { Montserrat } from "next/font/google";
 import { cookies } from "next/headers";
@@ -43,6 +43,7 @@ export default function RootLayout({
             <Footer />
         </TRPCReactProvider>
       </body>
+      <GoogleTagManager gtmId="G-YCDXQ5FJLJ" />
     </html>
   );
 }

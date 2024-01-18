@@ -7,7 +7,7 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
 	generateBuildId: () => {
-		return '2024-1-17-01'
+		return '2024-1-18-01'
 	},
 	images: {
 		remotePatterns: [
