@@ -1,12 +1,12 @@
-import "~/styles/globals.css";
-import { GoogleTagManager } from '@next/third-parties/google'
-import localFont from "next/font/local"
 import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import { cookies } from "next/headers";
+import "~/styles/globals.css";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import MainNav from "./_components/navigation/navigation";
 import Footer from "./_components/footer/footer";
+import MainNav from "./_components/navigation/navigation";
+import GTM from "./_components/tracking/gtm";
 
 const svn = localFont({
   src: [
@@ -37,13 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-slate-600 text-white">
       <body className={`font-sans ${svn.variable} ${inter.variable}`}>
+        <GTM />
         <TRPCReactProvider cookies={cookies().toString()}>
             <MainNav />
             {children}
             <Footer />
         </TRPCReactProvider>
       </body>
-      <GoogleTagManager gtmId="G-YCDXQ5FJLJ" />
     </html>
   );
 }

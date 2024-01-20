@@ -5,7 +5,7 @@ import Background from "public/background/test-register.jpg";
 import Decorate from "public/background/decorate.jpg";
 import { useState } from "react";
 import Link from "next/link";
-import { ContactUs, RightArrow } from "../_components/assets/icons";
+import { RightArrow } from "../_components/assets/icons";
 import patternBg from "public/background/pattern.png"
 
 interface IFormData {
@@ -54,10 +54,10 @@ export default function Contact() {
 
 			{step === 1 && <section className="w-full relative z-20 py-[100px]">
 				<Image src={Decorate} width={400} height={800} alt="home background"
-					className="absolute top-1/2 -translate-y-1/2 right-0 h-[95%] object-cover" />
+					className="absolute top-1/2 -translate-y-1/2 right-0 h-[95%] object-cover hidden lg:block" />
 
-				<div className="container flex justify-between items-center relative z-10 pl-[90px] mx-auto bg-[#001730] bg-opacity-40">
-					<div className="absolute top-1/2 -translate-y-1/2 left-0 bg-cyan h-1/2 w-[17px] rounded-tr-[20px] rounded-br-[20px]"></div>
+				<div className="container flex flex-col-reverse lg:flex-row justify-between items-center relative z-10 px-[20px] lg:pl-[90px] mx-auto bg-[#001730] bg-opacity-40">
+					<div className="absolute top-1/2 -translate-y-1/2 left-0 bg-cyan h-1/2 w-[17px] rounded-tr-[20px] rounded-br-[20px] hidden lg:block"></div>
 
 					<div className="flex flex-col gap-[40px] py-[90px]">
 						<p>Hãy liên hệ với chúng tôi qua Hotline nếu bạn cần thông tin luôn nhé!</p>
@@ -70,10 +70,12 @@ export default function Contact() {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-[100px] px-[60px] py-[30px] h-full bg-cyan w-[30%]">
-						<ContactUs />
+					<div className="flex flex-col gap-[100px] px-[60px] py-[30px] h-full bg-cyan w-full lg:w-[30%]">
+						<div>
+							<h1 className="font-bold text-[40px]">CONTACT US</h1>
 
-						<p className="text-black text-[14px]">Hãy nhấn vào nút Liên hệ trực tuyến để gửi thư cho chúng tôi</p>
+							<p className="text-black text-[14px]">Hãy nhấn vào nút Liên hệ trực tuyến để gửi thư cho chúng tôi</p>
+						</div>
 
 						<button className="flex justify-between items-center group hover:fill-white"
 							onClick={() => setStep(2)}
