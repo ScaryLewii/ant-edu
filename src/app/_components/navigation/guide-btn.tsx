@@ -13,7 +13,7 @@ export default function GuideBtn() {
 			onBlur={() => setOpen(false)}
 		>
 			<ChatIcon />
-			{open && <Link href="/">Hướng dẫn</Link>}
+			{open && <Link href="/404">Hướng dẫn</Link>}
 		</button>
 	)
 }
