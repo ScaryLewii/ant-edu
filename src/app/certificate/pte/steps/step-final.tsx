@@ -6,14 +6,14 @@ import StepIndex from "./step-index"
 const FinalStep = () => {
 	return (
 		<>
-		<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>
+		<h2 className="font-bold text-[40px] text-light">Đăng ký thi PTE</h2>
 
 		<div className="mx-auto mt-[80px] max-w-[888px]">
 			<StepIndex step={5} />
 		</div>
 
 		<div className="mx-auto mt-[80px] text-center">
-			Chúc mừng bạn đã hoàn thiện thủ tục đăng ký thi chứng chỉ IELTS. <br/>
+			Chúc mừng bạn đã hoàn thiện thủ tục đăng ký thi chứng chỉ PTE. <br/>
 			Chúng tôi sẽ cùng bạn luyện tập chăm chỉ để đạt kết quả cao.  
 			<br/><br/>
 			Nào chúng ta cùng bắt đầu

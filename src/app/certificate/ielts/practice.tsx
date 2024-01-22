@@ -16,7 +16,8 @@ const data = [
 		imgSrc: P1,
 		content: "Cung cấp kiểm tra trình độ tiếng Anh với các bài test 4 kỹ năng áp dụng công nghệ AI, nhận kết quả ngay sau 72 giờ.",
 		btnLabel: "Test ngay",
-		url: "https://ant-edu.ai/#testlist"
+		url: "https://ant-edu.ai/#testlist",
+		target: "_blank"
 	},
 	{
 		title: "Các khóa học cơ bản",
@@ -37,7 +38,8 @@ const data = [
 		imgSrc: P4,
 		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi IELTS có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
 		btnLabel: "Chi tiết",
-		url: "/documents"
+		url: "https://therealielts.vn/tai-lieu-hoc-ielts-mien-phi/tai-lieu-ielts-tong-hop/",
+		target: "_blank"
 	},
 	{
 		title: "Mẹo thi IELTS",
@@ -65,7 +67,7 @@ export default function Practice() {
 								
 								<div className="hidden group-hover:block">
 									<p className="mt-[10px] mb-[20px] text-[14px]">{d.content}</p>
-									<Link href={d.url} className="inline-block bg-cyan rounded-[9px] w-[114px] py-[10px]">{d.btnLabel}</Link>
+									<Link href={d.url} className="inline-block bg-cyan rounded-[9px] w-[114px] py-[10px]" target={d.target}>{d.btnLabel}</Link>
 								</div>
 							</div>
 						</div>

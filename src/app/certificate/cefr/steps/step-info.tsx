@@ -16,7 +16,7 @@ const InfoStep = () => {
 
 	return (
 		<>
-		<h2 className="font-bold text-[40px] text-light">Đăng ký thi IELTS</h2>
+		<h2 className="font-bold text-[40px] text-light">Đăng ký thi CEFR</h2>
 
 		<div className="mx-auto mt-[80px] max-w-[888px]">
 			<StepIndex step={2} />

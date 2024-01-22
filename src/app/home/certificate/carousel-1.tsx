@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { type IData } from "./certificate";
+import Link from "next/link";
 
 export default function Carousel1({data}: {data: IData[]}) {
 	return (
@@ -39,7 +40,9 @@ export default function Carousel1({data}: {data: IData[]}) {
 		>
 			{data.map((d, index) => 
 				<SwiperSlide key={index}>
-					<Image src={d.imgSrc} alt="certificate" width={200} height={100} className="object-cover max-w-[90%]" />
+					<Link href={d.url}>
+						<Image src={d.imgSrc} alt="certificate" width={200} height={100} className="object-cover max-w-[90%]" />
+					</Link>
 				</SwiperSlide>
 			)}
 		</Swiper>

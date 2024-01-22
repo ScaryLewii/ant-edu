@@ -38,7 +38,7 @@ const data = [
 	{
 		title: "Các khóa học",
 		imgSrc: Pte2,
-		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8' href='https://therealielts.vn/lo-trinh-hoc-ielts/'>Khóa học luyện thi</a></div>"
+		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='https://therealielts.vn/lo-trinh-hoc-ielts/'>Khóa học luyện thi</a></div>"
 	},
 	{
 		title: "Test trình độ",
@@ -48,7 +48,7 @@ const data = [
 			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="https://ant-edu.ai/#testlist" target='_blank' class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
 			</div>
 		</div>`
 	},
@@ -76,7 +76,7 @@ const data = [
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
 					<a href="https://ant-edu.ai/" target="_blank" class="font-bold">Website</a>
-					<a href="https://www.facebook.com/profile.php?id=6155391951562" target="_blank" class="font-bold">Facebook</a>
+					<a href="https://www.facebook.com/realieltsvn" target="_blank" class="font-bold">Facebook</a>
 					<a href="https://www.tiktok.com/@thereal.ielts" target="_blank" class="font-bold">Tiktok</a>
 					<a href="https://www.youtube.com/@therealielts5724" target="_blank" class="font-bold">Youtube</a>
 				</div>

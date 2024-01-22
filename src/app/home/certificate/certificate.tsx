@@ -17,23 +17,29 @@ import Block from "~/app/_components/layout/block";
 import Carousel1 from "./carousel-1";
 
 export interface IData {
+	url: string;
 	imgSrc: StaticImageData
 }
 
 const data = [
 	{
+		url: '#',
 		imgSrc: C1,
 	},
 	{
+		url: '/certificate/ielts',
 		imgSrc: C3,
 	},
 	{
+		url: '/certificate/pte',
 		imgSrc: C5,
 	},
 	{
+		url: '/certificate/ielts',
 		imgSrc: C4,
 	},
 	{
+		url: '/certificate/cefr',
 		imgSrc: C2,
 	},
 ]
@@ -68,7 +74,7 @@ export default function Certificate() {
 					<Carousel1 data={data} />
 				</div>
 
-				<nav className="mt-[50px]">
+				{/* <nav className="mt-[50px]">
 					<ul className="flex justify-center gap-[20px] xl:gap-[60px] flex-wrap">
 						{bottomNav.map((item, index) =>
 							<li key={index} className="group">
@@ -77,7 +83,7 @@ export default function Certificate() {
 							</li>
 						)}
 					</ul>
-				</nav>
+				</nav> */}
 			</>
 		</Block>
 	);

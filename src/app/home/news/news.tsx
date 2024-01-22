@@ -8,7 +8,7 @@ import { type INews } from "./news.types";
 
 const extraChildren = (datas: INews[]) => (
 	<div className="container flex flex-col lg:flex-row items-center justify-center z-[2] h-full px-[15px] py-[90px] xl:py-0">
-		<div className="bg-[#001730] bg-opacity-40 absolute top-0 right-0 w-[45%] h-full z-[1]"></div>
+		<div className="hidden lg:block bg-[#001730] bg-opacity-40 absolute top-0 right-0 w-[45%] h-full z-[1]"></div>
 
 		{datas[0] &&
 			<div className="lg:w-[60%]">
