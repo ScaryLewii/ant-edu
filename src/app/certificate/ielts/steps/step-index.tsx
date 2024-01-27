@@ -21,7 +21,7 @@ const data = [
 	},
 	{
 		index: 5,
-		label: "Nhận kết quả"
+		label: "Test trình độ"
 	},
 ]
 

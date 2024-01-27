@@ -1,11 +1,13 @@
 "use client"
 
-import { type Dispatch, type SetStateAction, useContext, useState } from "react"
+import { type Dispatch, type SetStateAction, useContext, useState, useEffect } from "react"
 import { StepContext } from "~/app/context/context"
 import StepIndex from "./step-index"
 import Input from "~/app/_components/form/input"
-import Dropdown from "~/app/_components/form/select"
+import Dropdown, { type IOption } from "~/app/_components/form/select"
 import Link from "next/link"
+import { type ISchedule } from "../../schedule.types"
+import moment from "moment"
 
 const InfoStep = () => {
 	const stepContext = useContext(StepContext) as {
@@ -13,6 +15,30 @@ const InfoStep = () => {
 	}
 
 	const [registered, setRegistered] = useState(false)
+	const [data, setData] = useState<ISchedule[]>([])
+	const [schedule, setSchedule] = useState<IOption[]>([])
+
+	useEffect(() => {
+		const getSchedule = async () => {
+			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "examinations?Page=1&PageSize=100")
+			const result = await data.text()
+
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+			const schedule = JSON.parse(result).data.items as ISchedule[]
+			setData(schedule.filter(s => s.certificateType === "PTE"))
+		}
+
+		getSchedule().catch(error => console.log(error))
+	}, [])
+
+	useEffect(() => {
+		const s: IOption[] = []
+		data.forEach(x =>
+			s.push({value: moment(x.startAt).format("DD-MM-YYYY"), label: moment(x.startAt).format("DD-MM-YYYY")})
+		)
+
+		setSchedule(s)
+	}, [data])
 
 	return (
 		<>
@@ -37,17 +63,19 @@ const InfoStep = () => {
 
 				<Input label="First / given names" type="text" placeholder="Enter here" />
 				<Input label="Country / territory of residence" type="text" placeholder="Vietnam" />
-				<Input label="Surname / family name" type="text" placeholder="Enter here" />
 				<Input label="Your contact details" type="text" placeholder="Enter here" />
 				<Input label="Date of birth" type="date" placeholder="dd / mm / yyyy" />
-				<Input label="Postal address" type="text" placeholder="Enter here" />
+				<Dropdown label="Thời gian thi thử" placeholder="Choose one option"
+					options={schedule}
+				/>
+				<Input label="Mục tiêu điểm đầu ra" type="text" placeholder="Enter here" />
 			</div>
 		}
 
 		{registered &&
 			<div className="mx-auto mt-[80px] text-center">
-				Bạn đã đăng ký thành công thi chứng chỉ IELTS, vui lòng <strong className="text-cyan">check email</strong> <br/>
-				để kiểm tra và cập nhật các thông tin mới nhất!
+				Bạn đã đăng ký thành công thi thử chứng chỉ PTE, vui lòng <strong className="text-cyan">check email</strong> <br/>
+				để kiểm tra và xác nhận.
 			</div>
 		}
 

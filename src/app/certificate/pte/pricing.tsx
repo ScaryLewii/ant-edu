@@ -10,13 +10,13 @@ const data = [
 	},
 	{
 		stt: 2,
-		content: "Lệ phí thi chứng chỉ tiếng Anh PTE UKVI",
-		pricing: "~ 180 USD"
+		content: "Lệ phí thi chứng chỉ tiếng Anh PTE Academic UKVI",
+		pricing: "185 USD (~ 4,600,000 VNĐ)"
 	},
 	{
 		stt: 3,
 		content: "Chứng chỉ tiếng Anh PTE Home",
-		pricing: "~ 150 USD"
+		pricing: "155 USD (~ 3,900,000 VNĐ)"
 	}
 ]
 

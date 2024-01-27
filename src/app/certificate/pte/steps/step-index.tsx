@@ -13,7 +13,7 @@ const data = [
 	},
 	{
 		index: 3,
-		label: "Nhận kết quả"
+		label: "Test trình độ"
 	},
 ]
 

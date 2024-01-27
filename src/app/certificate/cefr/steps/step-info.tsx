@@ -40,14 +40,14 @@ const InfoStep = () => {
 				<Input label="Surname / family name" type="text" placeholder="Enter here" />
 				<Input label="Your contact details" type="text" placeholder="Enter here" />
 				<Input label="Date of birth" type="date" placeholder="dd / mm / yyyy" />
-				<Input label="Postal address" type="text" placeholder="Enter here" />
+				<Input label="Mục tiêu điểm đầu ra" type="text" placeholder="Enter here" />
 			</div>
 		}
 
 		{registered &&
 			<div className="mx-auto mt-[80px] text-center">
-				Bạn đã đăng ký thành công thi chứng chỉ IELTS, vui lòng <strong className="text-cyan">check email</strong> <br/>
-				để kiểm tra và cập nhật các thông tin mới nhất!
+				Bạn đã đăng ký thành công thi thử chứng chỉ CEFR, vui lòng <strong className="text-cyan">check email</strong> <br/>
+				để kiểm tra và xác nhận.
 			</div>
 		}
 

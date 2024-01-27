@@ -38,6 +38,7 @@ export default function Schedule() {
 										return 'online'
 									}
 								}} 
+								onClickDay={() => document.getElementById("PTE_register")?.scrollIntoView()}
 							/>
 
 							<div className="flex gap-[20px] items-center justify-center mt-[40px]">

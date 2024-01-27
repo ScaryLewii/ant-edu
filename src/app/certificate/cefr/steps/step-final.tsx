@@ -13,8 +13,7 @@ const FinalStep = () => {
 		</div>
 
 		<div className="mx-auto mt-[80px] text-center">
-			Chúc mừng bạn đã hoàn thiện thủ tục đăng ký thi chứng chỉ IELTS. <br/>
-			Chúng tôi sẽ cùng bạn luyện tập chăm chỉ để đạt kết quả cao.  
+			Trong khi chờ thi thử bạn có muốn test nhanh trình độ của mình không ? 
 			<br/><br/>
 			Nào chúng ta cùng bắt đầu
 		</div>
@@ -25,7 +24,7 @@ const FinalStep = () => {
 			</Link>
 
 			<Link href="https://ant-edu.ai/auth/login" className="bg-cyan hover:bg-opacity-80 px-[24px] py-[12px] rounded-[9px]">
-				Kiểm tra lịch thi
+				Test trình độ
 			</Link>
 		</div>
 		</>

@@ -13,7 +13,7 @@ export default function Guidance() {
 	const [step, setStep] = useState(0)
 
 	return (
-		<Block backgroundSrc={Background}>
+		<Block backgroundSrc={Background} id="PTE_register">
 			<StepContext.Provider value={{step, setStep}}>
 				<div className="container flex flex-col justify-center items-center z-20 h-full mx-auto">
 					{step === 0 && <GuideStep />}

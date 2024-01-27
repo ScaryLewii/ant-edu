@@ -42,13 +42,13 @@ export default function Footer() {
 						</li>
 
 						<li>
-							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
+							<Link href="/404" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
 								<InstagramIcon />
 							</Link>
 						</li>
 
 						<li>
-							<Link href="" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
+							<Link href="/404" target="_blank" className="block w-[30px] lg:w-[50px] hover:opacity-60">
 								<TiktokIcon />
 							</Link>
 						</li>

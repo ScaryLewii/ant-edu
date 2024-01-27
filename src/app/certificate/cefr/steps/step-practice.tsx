@@ -18,8 +18,7 @@ const PracticeStep = () => {
 		</div>
 
 		<div className="mx-auto mt-[80px] text-center">
-			Chúc mừng bạn đã hoàn thiện thủ tục đăng ký thi chứng chỉ CEFR. <br/>
-			Chúng tôi sẽ cùng bạn luyện tập chăm chỉ để đạt kết quả cao.  
+		Trong khi chờ thi thử bạn có muốn test nhanh trình độ của mình không ?
 			<br/><br/>
 			Nào chúng ta cùng bắt đầu
 		</div>

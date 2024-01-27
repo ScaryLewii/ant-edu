@@ -47,10 +47,11 @@ const data = [
 		imgSrc: Pte6,
 		content: `
 		<div>
-			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. Tại đây, bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
+			<p>Tại sao bạn nên chọn kiểm tra trình độ tiếng Anh của mình tại AI Boosted English?
+			<br />Miễn Phí và Tiện Lợi: Kiểm tra trình độ tiếng Anh của bạn mà không mất phí. Trải nghiệm kiểm tra tại đây là đơn giản và thuận tiện.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Đăng ký ngay</a>
+				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
 			</div>
 		</div>`
 	},
@@ -77,10 +78,10 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="https://ant-edu.ai/" target="_blank" class="font-bold">Website</a>
+					<a href="/404" target="_blank" class="font-bold">Website</a>
 					<a href="https://www.facebook.com/realieltsvn" target="_blank" class="font-bold">Facebook</a>
-					<a href="https://www.tiktok.com/@thereal.ielts" target="_blank" class="font-bold">Tiktok</a>
-					<a href="https://www.youtube.com/@therealielts5724" target="_blank" class="font-bold">Youtube</a>
+					<a href="/404" target="_blank" class="font-bold">Tiktok</a>
+					<a href="/404" target="_blank" class="font-bold">Youtube</a>
 				</div>
 			</div>
 		`
