@@ -23,7 +23,7 @@ export default function Schedule() {
 						</div>
 						<div className="flex flex-col gap-[20px]">
 							<label className="font-bold">Số điện thoại *</label>
-							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, phone: e.target.value}))} />
+							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
 						</div>
 						<div>
 							<label htmlFor="city" className="block mb-[20px] font-bold">Bạn đang quan tâm đến?</label>
@@ -43,11 +43,11 @@ export default function Schedule() {
 						</div>
 						<div className="flex flex-col gap-[20px]">
 							<label className="font-bold">Thành phố sinh sống</label>
-							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, phone: e.target.value}))} />
+							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
 						</div>
 						<div className="flex flex-col gap-[20px]">
 							<label className="font-bold">Hình thức học</label>
-							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, phone: e.target.value}))} />
+							<input type="text" placeholder="Enter here" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" />
 						</div>
 						<div>
 							<label htmlFor="city" className="block mb-[20px] font-bold">Bạn đang tìm hiểu cho</label>

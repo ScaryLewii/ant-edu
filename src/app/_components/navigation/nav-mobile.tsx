@@ -1,13 +1,12 @@
 "use client"
 
-import Link from "next/link";
-import HeaderBg from "./header-bg";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "public/logo.png";
-import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
 import VN from "public/static-images/VN.png";
 import { useState } from "react";
-import NavItem from "./nav-item";
+import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
+import HeaderBg from "./header-bg";
 import NavItemMobile from "./nav-items-mobile";
 
 export default function NavMobile({navItems}: {navItems: {

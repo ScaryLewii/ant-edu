@@ -12,7 +12,6 @@ import 'swiper/css/effect-coverflow';
 
 import './styles.css';
 
-import Link from "next/link";
 import Block from "~/app/_components/layout/block";
 import Carousel1 from "./carousel-1";
 

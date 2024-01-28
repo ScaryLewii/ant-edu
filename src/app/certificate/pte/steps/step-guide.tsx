@@ -1,8 +1,7 @@
 "use client"
 
-import { type Dispatch, type SetStateAction, useContext } from "react"
+import { useContext, type Dispatch, type SetStateAction } from "react"
 import { StepContext } from "~/app/context/context"
-import Link from "next/link"
 
 const GuideStep = () => {
 	const stepContext = useContext(StepContext) as {
