@@ -7,7 +7,7 @@ export default function Schedule() {
 		<Block id="schedule" childrenClassName="container flex flex-wrap items-center justify-around h-full" backgroundSrc={Background}>
 			<>
 				<header className="w-full xl:w-[45%] max-w-[90%]">
-					<h2 className="text-[24px] lg:text-[48px] font-bold mb-[20px] lg:mb-[30px] text-glow">AI BOOSTED ENGLISH</h2>
+					<h2 className="text-[24px] lg:text-[48px] font-bold mb-[20px] lg:mb-[30px] text-glow">ĐĂNG KÝ TƯ VẤN</h2>
 					<i className="text-[12px] lg:text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
 				</header>
 

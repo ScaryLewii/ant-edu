@@ -10,7 +10,7 @@ export default function Schedule() {
 			
 			<div className="container flex items-center justify-around z-20 h-full">
 				<header className="w-[45%]">
-					<h2 className="text-[48px] font-bold mb-[30px] text-glow">AI BOOSTED ENGLISH</h2>
+					<h2 className="text-[48px] font-bold mb-[30px] text-glow">ĐĂNG KÝ TƯ VẤN</h2>
 					<i className="text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
 				</header>
 
