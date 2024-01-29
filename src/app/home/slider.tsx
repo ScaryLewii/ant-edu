@@ -13,7 +13,7 @@ const data = [
 		id: 1,
 		imgSrc: VisionImg,
 		title: "Tầm nhìn",
-		content: "<p>Trở thành hệ thống đào tạo ngoại ngữ đa nền tảng uy tín nhất tại Việt Nam</p>"
+		content: "<p>Trở thành Hệ thống đào tạo ngoại ngữ Đa nền tảng <b>Uy tín</b> nhất tại Việt Nam</p>"
 	},
 	{
 		id: 2,

@@ -19,7 +19,7 @@ export default async function MainNav() {
 		<div className="flex items-center gap-[40px] relative z-[2]">
 			<Link href="/" className="flex gap-2">
 				<Image src={Logo} alt="ant edu" width={55} height={54} className="object-contain w-[55px] h[54px]" />
-				<div className="flex flex-col gap-[2px]">
+				<div className="flex flex-col gap-[2px] hover:text-glow">
 					<b className="">AI BOOSTED ENGLISH</b>
 					<i>One Click for Everything</i>
 				</div>

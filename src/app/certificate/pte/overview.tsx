@@ -43,7 +43,7 @@ const data = [
 	{
 		title: "Các khóa học",
 		imgSrc: Pte2,
-		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='https://khaothi.ant-edu.ai/demo1'>Khóa học luyện thi</a></div>"
+		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='/404' target='_blank'>Khóa học luyện thi</a></div>"
 	},
 	{
 		title: "Test trình độ",

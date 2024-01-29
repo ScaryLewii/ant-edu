@@ -7,6 +7,7 @@ import Pte2 from "public/static-images/ielts2.jpg";
 import Pte3 from "public/static-images/ielts3.jpg";
 import Pte6 from "public/static-images/ielts6.jpg";
 import Pte8 from "public/static-images/ielts8.jpg";
+import BangQuyDoi from "public/static-images//bang-quy-doi.jpeg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -31,8 +32,8 @@ const data = [
 				Mỗi cấp trình độ phản ánh khả năng sử dụng tiếng Anh trong các tình huống khác nhau, từ cơ bản đến chuyên sâu. Đối với mỗi cấp trình độ, bạn sẽ phải vượt qua các phần kiểm tra Nghe, Đọc, Viết và Nói tương ứng.</p>
 			<p>Thời gian thi thường khoảng 3 giờ tùy theo loại chứng chỉ.</p>
 				<div>
-					<a href="#">Xem lịch thi chính thức</a>
-					<a href="#">Đăng ký thi chính thức</a>
+					<a href="/404">Xem lịch thi chính thức</a>
+					<a href="/404">Đăng ký thi chính thức</a>
 				</div>
 			</div>
 		`
@@ -51,7 +52,7 @@ const data = [
 			<br />Miễn Phí và Tiện Lợi: Kiểm tra trình độ tiếng Anh của bạn mà không mất phí. Trải nghiệm kiểm tra tại đây là đơn giản và thuận tiện.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
+				<a href="https://ant-edu.ai/#testlist" target="_blank" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
 			</div>
 		</div>`
 	},
@@ -97,7 +98,7 @@ export default function Overview() {
 
 	return (
 		<section className="flex flex-col items-center justify-center overview min-h-screen relative" style={{background: `url(${Background.src}) center / cover` }}>
-			<div className="container z-20 text-center py-[10%]">
+			<div className="container z-20 text-center py-20">
 				<span className="text-[32px] font-svn">Thông tin chung về</span>
 				<h2 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ IELTS</h2>
 
@@ -124,6 +125,8 @@ export default function Overview() {
 					activeIndex === index && <div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
 				)}
 			</div>
+
+			<Image src={BangQuyDoi} unoptimized alt="" className="mb-20" />
 
 			<div className="scroll-down-arrow">
 				<span></span>

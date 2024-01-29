@@ -14,6 +14,8 @@ import './styles.css';
 
 import Block from "~/app/_components/layout/block";
 import Carousel1 from "./carousel-1";
+import Link from "next/link";
+import Image from "next/image";
 
 export interface IData {
 	url: string;
@@ -69,8 +71,16 @@ export default function Certificate() {
 				<h2 className="font-bold text-[40px] mb-[16px] text-glow">Chứng chỉ</h2>
 				<i>Bạn hãy chọn một bài thi và khám phá!</i>
 
-				<div className="mt-[50px] home-cert">
-					<Carousel1 data={data} />
+				<div className="mt-[50px] home-cert flex flex-col lg:flex-row gap-5">
+					{data.map((d, index) => (
+						<Link href={d.url} key={index}
+							className="bg-white rounded-2xl shadow-lg flex items-center justify-center overflow-hidden h-60 group"
+						>
+							<Image src={d.imgSrc} alt="certificate" width={200} height={100}
+								className="object-cover max-w-[80%] group-hover:scale-110 transition-all"
+							/>
+						</Link>
+					))}
 				</div>
 
 				{/* <nav className="mt-[50px]">

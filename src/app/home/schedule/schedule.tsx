@@ -11,7 +11,7 @@ export default function Schedule() {
 					<i className="text-[12px] lg:text-[18px]">Hãy bắt đầu với một vài câu hỏi về bạn để chúng mình có thể tìm ra lộ trình Khảo thí cho bạn một cách tối ưu nhất nhé!</i>
 				</header>
 
-				<form className="xl:w-[45%] flex flex-col gap-[40px] 
+				<form className="w-full lg:w-[45%] flex flex-col gap-[40px] 
 					px-[15px] py-[30px] xl:px-[50px] xl:py-[70px]
 					mt-[30px] xl:mt-0
 					backdrop-blur-md bg-[#00313D] bg-opacity-[0.05]
