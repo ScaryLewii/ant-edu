@@ -8,6 +8,7 @@ import Pte3 from "public/static-images/pte3.jpg";
 import Pte5 from "public/static-images/pte5.jpg";
 import Pte6 from "public/static-images/pte6.jpg";
 import Pte8 from "public/static-images/pte8.jpg";
+import BangQuyDoi from "public/static-images//bang-quy-doi.jpeg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -105,7 +106,7 @@ export default function Overview() {
 
 	return (
 		<section className="flex flex-col items-center justify-center overview min-h-screen relative" style={{background: `url(${Background.src}) center / cover` }}>
-			<div className="container z-20 text-center py-[10%]">
+			<div className="container z-20 text-center pt-[10%] py-20">
 				<span className="text-[32px] font-svn">Thông tin chung về</span>
 				<h2 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ PTE</h2>
 
@@ -132,6 +133,8 @@ export default function Overview() {
 					activeIndex === index && <div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
 				)}
 			</div>
+
+			<Image src={BangQuyDoi} unoptimized alt="" className="mb-20" />
 
 			<div className="scroll-down-arrow">
 				<span></span>

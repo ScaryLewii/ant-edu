@@ -98,7 +98,7 @@ export default function Overview() {
 
 	return (
 		<section className="flex flex-col items-center justify-center overview min-h-screen relative" style={{background: `url(${Background.src}) center / cover` }}>
-			<div className="container z-20 text-center py-20">
+			<div className="container z-20 text-center pt-[10%] py-20">
 				<span className="text-[32px] font-svn">Thông tin chung về</span>
 				<h2 className="font-bold text-[48px] text-[#FEE7B5]">Chứng chỉ IELTS</h2>
 
