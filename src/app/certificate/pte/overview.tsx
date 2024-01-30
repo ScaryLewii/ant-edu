@@ -43,7 +43,7 @@ const data = [
 	{
 		title: "Các khóa học",
 		imgSrc: Pte2,
-		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='/404' target='_blank'>Khóa học luyện thi</a></div>"
+		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='/page-not-found' target='_blank'>Khóa học luyện thi</a></div>"
 	},
 	{
 		title: "Test trình độ",
@@ -66,9 +66,9 @@ const data = [
 				<p>Chúng tôi sẽ cùng bạn chuẩn bị tốt nhất cho kỳ thi sắp tới nhé!</p>
 
 				<div class="mt-8 flex items-center justify-center gap-[30px]">
-					<a href="/404" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
-					<a href="/404" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Tài liệu ôn thi</a>
-					<a href="/404" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
+					<a href="/page-not-found" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
+					<a href="/page-not-found" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Tài liệu ôn thi</a>
+					<a href="/page-not-found" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
 				</div>
 			</div>
 		`
@@ -86,10 +86,10 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="/404" target="_blank" class="font-bold">Website</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Website</a>
 					<a href="https://www.facebook.com/realieltsvn" target="_blank" class="font-bold">Facebook</a>
-					<a href="/404" target="_blank" class="font-bold">Tiktok</a>
-					<a href="/404" target="_blank" class="font-bold">Youtube</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Tiktok</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Youtube</a>
 				</div>
 			</div>
 		`

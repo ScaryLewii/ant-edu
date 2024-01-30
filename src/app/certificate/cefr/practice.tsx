@@ -14,7 +14,7 @@ const data = [
 		imgSrc: P1,
 		content: "Cung cấp kiểm tra trình độ tiếng Anh với các bài test 4 kỹ năng áp dụng công nghệ AI, nhận kết quả ngay sau 72 giờ.",
 		btnLabel: "Test ngay",
-		url: "/404",
+		url: "/page-not-found",
 		target: "_blank"
 	},
 	{
@@ -36,7 +36,7 @@ const data = [
 		imgSrc: P4,
 		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi IELTS có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
 		btnLabel: "Chi tiết",
-		url: "/404",
+		url: "/page-not-found",
 		target: "_blank"
 	},
 ]

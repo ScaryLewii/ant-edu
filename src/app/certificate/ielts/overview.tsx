@@ -32,8 +32,8 @@ const data = [
 				Mỗi cấp trình độ phản ánh khả năng sử dụng tiếng Anh trong các tình huống khác nhau, từ cơ bản đến chuyên sâu. Đối với mỗi cấp trình độ, bạn sẽ phải vượt qua các phần kiểm tra Nghe, Đọc, Viết và Nói tương ứng.</p>
 			<p>Thời gian thi thường khoảng 3 giờ tùy theo loại chứng chỉ.</p>
 				<div>
-					<a href="/404">Xem lịch thi chính thức</a>
-					<a href="/404">Đăng ký thi chính thức</a>
+					<a href="/page-not-found">Xem lịch thi chính thức</a>
+					<a href="/page-not-found">Đăng ký thi chính thức</a>
 				</div>
 			</div>
 		`
@@ -79,10 +79,10 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="/404" target="_blank" class="font-bold">Website</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Website</a>
 					<a href="https://www.facebook.com/realieltsvn" target="_blank" class="font-bold">Facebook</a>
-					<a href="/404" target="_blank" class="font-bold">Tiktok</a>
-					<a href="/404" target="_blank" class="font-bold">Youtube</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Tiktok</a>
+					<a href="/page-not-found" target="_blank" class="font-bold">Youtube</a>
 				</div>
 			</div>
 		`

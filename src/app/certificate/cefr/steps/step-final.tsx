@@ -23,7 +23,7 @@ const FinalStep = () => {
 				Trở lại trang chủ
 			</Link>
 
-			<Link href="/404" target="_blank" className="bg-cyan hover:bg-opacity-80 px-[24px] py-[12px] rounded-[9px]">
+			<Link href="/page-not-found" target="_blank" className="bg-cyan hover:bg-opacity-80 px-[24px] py-[12px] rounded-[9px]">
 				Test trình độ
 			</Link>
 		</div>

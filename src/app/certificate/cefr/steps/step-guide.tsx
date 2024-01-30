@@ -16,7 +16,7 @@ const GuideStep = () => {
 
 		<div className="mx-auto mt-[80px] max-w-[888px]">
 			<div>
-			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. <Link href="/404" target="_blank" className="font-bold text-cyan underline">Tại đây,</Link> bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. </p>
+			<p>Chúng tôi sẽ hỗ trợ bạn hoàn thiện thủ tục đăng ký nhanh chóng và hiệu quả nhất. <Link href="/page-not-found" target="_blank" className="font-bold text-cyan underline">Tại đây,</Link> bạn có thể chọn lịch thi phù hợp, điền thông tin cá nhân và thực hiện thanh toán phí thi. </p>
 			<br /><br />
 			<p>Sau khi hoàn tất quy trình đăng ký, bạn sẽ nhận được xác nhận đăng ký cùng với thông tin chi tiết về thời gian và địa điểm thi.</p>
 			<br /><br />

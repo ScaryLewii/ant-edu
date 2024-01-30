@@ -51,11 +51,11 @@ const bottomNav = [
 		label: "Tổng quan"
 	},
 	{
-		href: "/404",
+		href: "/page-not-found",
 		label: "Cẩm nang luyện thi"
 	},
 	{
-		href: "/404",
+		href: "/page-not-found",
 		label: "Bí kíp về đích"
 	},
 	{
