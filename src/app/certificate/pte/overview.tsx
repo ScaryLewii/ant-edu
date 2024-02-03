@@ -8,7 +8,6 @@ import Pte3 from "public/static-images/pte3.jpg";
 import Pte5 from "public/static-images/pte5.jpg";
 import Pte6 from "public/static-images/pte6.jpg";
 import Pte8 from "public/static-images/pte8.jpg";
-import BangQuyDoi from "public/static-images//bang-quy-doi.jpeg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,6 +16,7 @@ import './styles.css';
 
 import { useState } from "react";
 import { Navigation } from "swiper/modules";
+import ConvertTable from "~/app/_components/common/table";
 
 const data = [
 	{
@@ -67,9 +67,9 @@ const data = [
 				<p>Chúng tôi sẽ cùng bạn chuẩn bị tốt nhất cho kỳ thi sắp tới nhé!</p>
 
 				<div class="mt-8 flex items-center justify-center gap-[30px]">
-					<a href="/page-not-found" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
-					<a href="/page-not-found" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Tài liệu ôn thi</a>
-					<a href="/page-not-found" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
+					<a href="/page-not-found" target="_blank" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Hướng dẫn thi</a>
+					<a href="/page-not-found" target="_blank" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Tài liệu ôn thi</a>
+					<a href="/page-not-found" target="_blank" class="rounded-[9px] border border-cyan px-[39px] py-[13px] font-bold">Câu hỏi thường gặp</a>
 				</div>
 			</div>
 		`
@@ -88,7 +88,7 @@ const data = [
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
 					<a href="/page-not-found" target="_blank" class="font-bold">Website</a>
-					<a href="https://www.facebook.com/realieltsvn" target="_blank" class="font-bold">Facebook</a>
+					<a href="https://www.facebook.com/PTE.Booster/" target="_blank" class="font-bold">Facebook</a>
 					<a href="/page-not-found" target="_blank" class="font-bold">Tiktok</a>
 					<a href="/page-not-found" target="_blank" class="font-bold">Youtube</a>
 				</div>
@@ -130,11 +130,14 @@ export default function Overview() {
 				</div>
 
 				{data.map((d, index) => 
-					activeIndex === index && <div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+					activeIndex === index && (
+						<>
+							<div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+							{index === 4 && <ConvertTable />}
+						</>
+					)
 				)}
 			</div>
-
-			<Image src={BangQuyDoi} unoptimized alt="" className="mb-20" />
 
 			<div className="scroll-down-arrow">
 				<span></span>

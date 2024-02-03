@@ -7,7 +7,6 @@ import Pte2 from "public/static-images/ielts2.jpg";
 import Pte3 from "public/static-images/ielts3.jpg";
 import Pte6 from "public/static-images/ielts6.jpg";
 import Pte8 from "public/static-images/ielts8.jpg";
-import BangQuyDoi from "public/static-images//bang-quy-doi.jpeg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,6 +15,7 @@ import './styles.css';
 
 import { useState } from "react";
 import { Navigation } from "swiper/modules";
+import ConvertTable from "~/app/_components/common/table";
 
 const data = [
 	{
@@ -32,8 +32,8 @@ const data = [
 				Mỗi cấp trình độ phản ánh khả năng sử dụng tiếng Anh trong các tình huống khác nhau, từ cơ bản đến chuyên sâu. Đối với mỗi cấp trình độ, bạn sẽ phải vượt qua các phần kiểm tra Nghe, Đọc, Viết và Nói tương ứng.</p>
 			<p>Thời gian thi thường khoảng 3 giờ tùy theo loại chứng chỉ.</p>
 				<div>
-					<a href="/page-not-found">Xem lịch thi chính thức</a>
-					<a href="/page-not-found">Đăng ký thi chính thức</a>
+					<a href="/page-not-found" target="_blank">Xem lịch thi chính thức</a>
+					<a href="/page-not-found" target="_blank">Đăng ký thi chính thức</a>
 				</div>
 			</div>
 		`
@@ -122,11 +122,11 @@ export default function Overview() {
 				</div>
 
 				{data.map((d, index) => 
-					activeIndex === index && <div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+					activeIndex === index && <>
+						<div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+					</>
 				)}
 			</div>
-
-			<Image src={BangQuyDoi} unoptimized alt="" className="mb-20" />
 
 			<div className="scroll-down-arrow">
 				<span></span>

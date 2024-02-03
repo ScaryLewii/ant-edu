@@ -6,7 +6,7 @@ const data = [
 	{
 		stt: 1,
 		content: "Lệ phí thi PTE Academic",
-		pricing: "180 USD"
+		pricing: "185 USD"
 	},
 	{
 		stt: 2,

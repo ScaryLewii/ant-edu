@@ -35,9 +35,8 @@ const InfoStep = () => {
 					{value: 'other', label: 'Other'},
 				]} />
 
-				<Input label="First / given names" type="text" placeholder="Enter here" />
+				<Input label="Họ và Tên / Full name" type="text" placeholder="Enter here" />
 				<Input label="Country / territory of residence" type="text" placeholder="Vietnam" />
-				<Input label="Surname / family name" type="text" placeholder="Enter here" />
 				<Input label="Your contact details" type="text" placeholder="Enter here" />
 				<Input label="Date of birth" type="date" placeholder="dd / mm / yyyy" />
 				<Input label="Mục tiêu điểm đầu ra" type="text" placeholder="Enter here" />

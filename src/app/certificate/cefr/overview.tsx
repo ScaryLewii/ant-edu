@@ -7,7 +7,6 @@ import Pte2 from "public/static-images/cefr2.jpg";
 import Pte3 from "public/static-images/cefr3.jpg";
 import Pte6 from "public/static-images/cefr6.jpg";
 import Pte8 from "public/static-images/cefr8.jpg";
-import BangQuyDoi from "public/static-images//bang-quy-doi.jpeg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,6 +15,7 @@ import './styles.css';
 
 import { useState } from "react";
 import { Navigation } from "swiper/modules";
+import ConvertTable from "~/app/_components/common/table";
 
 const data = [
 	{
@@ -120,11 +120,11 @@ export default function Overview() {
 				</div>
 
 				{data.map((d, index) => 
-					activeIndex === index && <div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+					activeIndex === index && <>
+						<div key={index} dangerouslySetInnerHTML={{__html: d.content}} className="container mt-[75px] mx-auto text-left max-w-[900px]"></div>
+					</>
 				)}
 			</div>
-
-			<Image src={BangQuyDoi} unoptimized alt="" className="mb-20" />
 
 			<div className="scroll-down-arrow">
 				<span></span>

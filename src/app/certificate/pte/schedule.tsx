@@ -38,7 +38,11 @@ export default function Schedule() {
 										return 'online'
 									}
 								}} 
-								onClickDay={() => document.getElementById("PTE_register")?.scrollIntoView()}
+								onClickDay={(value) => {
+									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(value).format("DD-MM-YYYY") && x.examinationType === "Offline")) {
+										document.getElementById("PTE_register")?.scrollIntoView()
+									}
+								}}
 							/>
 
 							<div className="flex gap-[20px] items-center justify-center mt-[40px]">
