@@ -183,6 +183,16 @@ abbr {
 	color: #909090;
 }
 
+.online-orange {
+	--date--bg: orange;
+	color: #909090;
+}
+
+.online-green {
+	--date--bg: #00e02d;
+	color: #fff;
+}
+
 .offline {
 	--date--bg: #00B7F0;
 	color: #fff;

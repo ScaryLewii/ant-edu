@@ -39,7 +39,7 @@ const data = [
 	{
 		title: "Các khóa học",
 		imgSrc: Pte2,
-		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='/page-not-found'>Khóa học luyện thi</a></div>"
+		content: "<div style='text-align:center'><p>Các khóa học cơ bản giúp người học nhanh chóng đạt mục tiêu thi lấy chứng chỉ với thời gian và chi phí thấp nhất.</p><a class='bg-cyan px-[50px] py-[13px] rounded-[9px] hover:bg-opacity-80 inline-block mt-8 font-bold' target='_blank' href='http://pte.ant-edu.ai/khoa-hoc'>Khóa học luyện thi</a></div>"
 	},
 	{
 		title: "Test trình độ",
@@ -50,7 +50,7 @@ const data = [
 			<br />Miễn Phí và Tiện Lợi: Kiểm tra trình độ tiếng Anh của bạn mà không mất phí. Trải nghiệm kiểm tra tại đây là đơn giản và thuận tiện.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="/page-not-found" target='_blank' class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
+				<a href="https://ant-edu.ai/#testlist" target='_blank' class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
 			</div>
 		</div>`
 	},

@@ -14,5 +14,5 @@ export interface ISchedule {
 	price: number,
 	currency: "VND" | "USD",
 	isActive: boolean,
-	examinationRegisters: []
+	examinationRegisters: number
 }

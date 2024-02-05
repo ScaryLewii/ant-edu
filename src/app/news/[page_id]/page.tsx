@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import Block from "~/app/_components/layout/block";
 import { type INews } from "~/app/home/news/news.types";
 import PostWithThumbnail from "../post-with-thumb";
+import moment from "moment";
+import './styles.css';
+import style from './news.module.scss'
 
 type PostData = {
 	id: number;
@@ -62,9 +65,9 @@ export default function News() {
 			{data && 
 				<article className="container mx-auto max-w-[1040px] mt-[30%]">
 					<h1 className="text-center text-cyan text-[40px] font-bold">{data.title}</h1>
-					<span className="mx-auto block text-center">{data.createdAt}</span>
+					<span className="mx-auto block text-center">{moment(data.createdAt).format("DD-MM-YYYY")}</span>
 
-					<div className="text-justify mt-[140px] flex flex-col" dangerouslySetInnerHTML={{__html: data.content}}>
+					<div className={`text-justify mt-[140px] flex flex-col ${style.ck}`} dangerouslySetInnerHTML={{__html: data.content}}>
 					</div>
 				</article>
 			}

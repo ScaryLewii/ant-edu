@@ -55,7 +55,7 @@ const data = [
 			<br />Miễn Phí và Tiện Lợi: Kiểm tra trình độ tiếng Anh của bạn mà không mất phí. Trải nghiệm kiểm tra tại đây là đơn giản và thuận tiện.</p>
 			
 			<div class="mt-8 flex items-center justify-center gap-[30px]">
-				<a href="https://ant-edu.ai/#testlist" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
+				<a href="https://ant-edu.ai/#testlist" target="_blank" class="rounded-[9px] bg-cyan px-[39px] py-[13px] font-bold">Test trình độ</a>
 			</div>
 		</div>`
 	},
@@ -87,7 +87,7 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="/page-not-found" target="_blank" class="font-bold">Website</a>
+					<a href="https://pte.ant-edu.ai/khoa-hoc" target="_blank" class="font-bold">Website</a>
 					<a href="https://www.facebook.com/PTE.Booster/" target="_blank" class="font-bold">Facebook</a>
 					<a href="/page-not-found" target="_blank" class="font-bold">Tiktok</a>
 					<a href="/page-not-found" target="_blank" class="font-bold">Youtube</a>
