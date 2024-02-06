@@ -15,7 +15,6 @@ import './styles.css';
 
 import { useState } from "react";
 import { Navigation } from "swiper/modules";
-import ConvertTable from "~/app/_components/common/table";
 
 const data = [
 	{

@@ -1,10 +1,9 @@
-import Background from "public/background/schedule.jpg";
-import Block from "~/app/_components/layout/block";
-import { useForm, type SubmitHandler } from "react-hook-form"
-import { useEffect, useState } from "react";
-import patternBg from "public/background/pattern.png"
 import Image from "next/image";
-import Link from "next/link";
+import patternBg from "public/background/pattern.png";
+import Background from "public/background/schedule.jpg";
+import { useEffect, useState } from "react";
+import { useForm, type SubmitHandler } from "react-hook-form";
+import Block from "~/app/_components/layout/block";
 
 type Inputs = {
   name: string,

@@ -12,10 +12,9 @@ import 'swiper/css/effect-coverflow';
 
 import './styles.css';
 
-import Block from "~/app/_components/layout/block";
-import Carousel1 from "./carousel-1";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import Block from "~/app/_components/layout/block";
 
 export interface IData {
 	url: string;
@@ -43,25 +42,6 @@ const data = [
 		url: '/certificate/cefr',
 		imgSrc: C2,
 	},
-]
-
-const bottomNav = [
-	{
-		href: "/certificate/pte",
-		label: "Tổng quan"
-	},
-	{
-		href: "/page-not-found",
-		label: "Cẩm nang luyện thi"
-	},
-	{
-		href: "/page-not-found",
-		label: "Bí kíp về đích"
-	},
-	{
-		href: "https://ant-edu.ai/#testlist",
-		label: "Đánh giá năng lực"
-	}
 ]
 
 export default function Certificate() {
