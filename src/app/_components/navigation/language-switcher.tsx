@@ -2,7 +2,7 @@
 
 import { ArrowDown } from "../assets/icons";
 import Image from "next/image";
-import VN from "public/static-images/vn.png";
+import VN from "public/static-images/vn-flag.png";
 import EN from "public/static-images/en.png";
 import { useState } from "react";
 
