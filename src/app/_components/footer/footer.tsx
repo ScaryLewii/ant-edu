@@ -7,6 +7,7 @@ import Background from "public/background/contact.jpg";
 import Logo from "public/logo-big.png";
 import { FacebookIcon, InstagramIcon, TiktokIcon } from "../assets/icons";
 import FacebookPage from "./facebook";
+import Chat from "../navigation/chat";
 
 export default function Footer() {
 	const pathName = usePathname()
@@ -57,6 +58,8 @@ export default function Footer() {
 
 				<FacebookPage />
 			</div>
+
+			<Chat />
 		</footer>
 	);
 }

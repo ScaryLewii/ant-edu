@@ -9,6 +9,7 @@ import HeaderBg from "./header-bg";
 import NavItem from "./nav-item";
 import NavMobile from "./nav-mobile";
 import SearchInput from "./search-input";
+import LangSwithcer from "./language-switcher";
 
 export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
@@ -42,10 +43,7 @@ export default async function MainNav() {
 
 			<Link href="" className="bg-cyan px-[7px] py-[12px] rounded-[9px] hover:bg-opacity-80">Đăng nhập</Link>
 		
-			<button className="border border-white rounded-[9px] w-[73px] h-[48px] inline-flex items-center justify-center gap-[10px]">
-				<Image src={VN} width={29} height={29} alt="language" />
-				<ArrowDown />
-			</button>
+			<LangSwithcer />
 		</div>
 	</header>
 	

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
 import HeaderBg from "./header-bg";
 import NavItemMobile from "./nav-items-mobile";
+import LangSwithcer from "./language-switcher";
 
 export default function NavMobile({navItems}: {navItems: {
 	id: number,
@@ -59,10 +60,7 @@ export default function NavMobile({navItems}: {navItems: {
 						<div className="flex gap-5 px-3">
 							<Link href="" className="bg-cyan px-[7px] py-[12px] rounded-[9px] hover:bg-opacity-80">Đăng nhập</Link>
 						
-							<button className="border border-white rounded-[9px] w-[73px] h-[48px] inline-flex items-center justify-center gap-[10px]">
-								<Image src={VN} width={29} height={29} alt="language" />
-								<ArrowDown />
-							</button>
+							<LangSwithcer />
 						</div>
 					</div>
 				</>
