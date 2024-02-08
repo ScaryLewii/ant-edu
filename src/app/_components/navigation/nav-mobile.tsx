@@ -3,12 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/logo.png";
-import VN from "public/static-images/VN.png";
 import { useState } from "react";
-import { ArrowDown, ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
+import { ChatIcon, Hambuger, SearchIcon } from "../assets/icons";
 import HeaderBg from "./header-bg";
-import NavItemMobile from "./nav-items-mobile";
 import LangSwithcer from "./language-switcher";
+import NavItemMobile from "./nav-items-mobile";
 
 export default function NavMobile({navItems}: {navItems: {
 	id: number,

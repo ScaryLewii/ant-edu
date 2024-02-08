@@ -1,15 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/logo.png";
-import VN from "public/static-images/VN.png";
 import { api } from "~/trpc/server";
-import { ArrowDown } from "../assets/icons";
 import GuideBtn from "./guide-btn";
 import HeaderBg from "./header-bg";
+import LangSwithcer from "./language-switcher";
 import NavItem from "./nav-item";
 import NavMobile from "./nav-mobile";
 import SearchInput from "./search-input";
-import LangSwithcer from "./language-switcher";
 
 export default async function MainNav() {
 	const navItems = await api.navItems.getAll.query()
