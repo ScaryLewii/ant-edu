@@ -6,7 +6,8 @@ import "~/styles/globals.css";
 import { TRPCReactProvider } from "~/trpc/react";
 import Footer from "./_components/footer/footer";
 import MainNav from "./_components/navigation/navigation";
-import GTM from "./_components/tracking/gtm";
+import GTM from "./_components/third-party/gtm";
+import Zalo from "./_components/third-party/zalo";
 
 const svn = localFont({
   src: [
@@ -43,6 +44,7 @@ export default function RootLayout({
             {children}
             <Footer />
         </TRPCReactProvider>
+        <Zalo />
       </body>
     </html>
   );
