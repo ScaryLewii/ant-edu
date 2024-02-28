@@ -1,23 +1,18 @@
 "use client"
 
 import homeAboutBackground from "public/background/about-bg.jpg";
-import homeHeroBackground from "public/background/main-bg.jpg";
 import Block from "./_components/layout/block";
 import Certificate from "./home/certificate/certificate";
 import News from "./home/news/news";
 import Partner from "./home/partner/partner";
 import Schedule from "./home/schedule/schedule";
 import Slider from "./home/slider";
+import HomeBanner from "./home/home-banner";
 
 export default function Home() {
   return (
     <main>
-      <Block backgroundSrc={homeHeroBackground}>
-        <div className="container flex flex-col items-center justify-center gap-8 text-center mx-auto">
-          <h1 className="text-[26px] max-w-[80%] xl:text-[65px] font-bold text-glow">Trung tâm Khảo thí Ant Edu</h1>
-          <i className="xl:text-[26px] max-w-[90%]">Một nút nhấn cho ngàn mục tiêu</i>
-        </div>
-      </Block>
+      <HomeBanner />
 
       <Block id="about" backgroundSrc={homeAboutBackground} childrenClassName="container min-h-screen px-3 flex flex-col xl:flex-row justify-center items-end z-20 h-full pb-[80px] gap-[120px]">
         <>

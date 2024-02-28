@@ -13,7 +13,7 @@ export default function NewsPage() {
 
 	useEffect(() => {
 		const getData = async () => {
-			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "blog-categories/18/posts?Page=1&PageSize=100")
+			const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "blog-categories/21/posts?Page=1&PageSize=5")
 			const result = await data.text()
 
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
