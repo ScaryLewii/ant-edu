@@ -37,7 +37,7 @@ const data = [
 		imgSrc: P4,
 		content: "Chúng tôi cung cấp cho bạn danh sách các tài liệu ôn thi PTE có sẵn, bao gồm sách giáo trình, tài liệu tham khảo và bộ đề thi mẫu.",
 		btnLabel: "Chi tiết",
-		url: "/page-not-found",
+		url: "/documents",
 		target: "_blank"
 	},
 	{

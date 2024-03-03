@@ -35,7 +35,7 @@ export default function Schedule() {
 									}
 
 									if (data.find(x => moment(x.startAt).format("DD-MM-YYYY") === moment(date).format("DD-MM-YYYY") && x.examinationType === "Online")) {
-										return 'online'
+										return 'online-green'
 									}
 								}} 
 								onClickDay={(value) => {
@@ -46,6 +46,11 @@ export default function Schedule() {
 							/>
 
 							<div className="flex gap-[20px] items-center justify-center mt-[40px]">
+								<div className="inline-flex items-center gap-[12px]">
+									<span className="block w-[22px] h-[22px] rounded-full bg-green-500"></span>
+									<span>Lịch Online</span>
+								</div>
+
 								<div className="inline-flex items-center gap-[12px]">
 									<span className="block w-[22px] h-[22px] rounded-full bg-cyan"></span>
 									<span>Lịch Offline</span>
