@@ -107,6 +107,7 @@ export default function Contact() {
 									<option className="text-black" value="Khóa học IELTS offline tại Hà Nội">Khóa học IELTS offline tại Hà Nội</option>
 									<option className="text-black" value="Khóa học IELTS online">Khóa học IELTS online</option>
 									<option className="text-black" value="Khóa học Tiếng Anh online">Khóa học Tiếng Anh online</option>
+									<option className="text-black" value="Khóa học PTE">Khóa học PTE</option>
 								</select>
 							</div>
 						</div>
