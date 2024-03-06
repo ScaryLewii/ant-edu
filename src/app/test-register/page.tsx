@@ -104,10 +104,10 @@ export default function Contact() {
 								<label htmlFor="city" className="font-bold">Câu hỏi của bạn là về?</label>
 								<select id="city" className="bg-transparent border rounded-[14px] focus:ring-cyan block w-full px-[20px] py-[15px]" onChange={e => setFormData(data => ({...data, title: e.target.value}))}>
 									<option className="text-black" value="">Chọn câu hỏi</option>
-									<option className="text-black" value="Khóa học IELTS offline tại Hà Nội">Khóa học IELTS offline tại Hà Nội</option>
-									<option className="text-black" value="Khóa học IELTS online">Khóa học IELTS online</option>
-									<option className="text-black" value="Khóa học Tiếng Anh online">Khóa học Tiếng Anh online</option>
 									<option className="text-black" value="Khóa học PTE">Khóa học PTE</option>
+									<option className="text-black" value="Đánh giá trình độ">Đánh giá trình độ</option>
+									<option className="text-black" value="Lịch khảo thí">Lịch khảo thí</option>
+									<option className="text-black" value="Khác">Khác</option>
 								</select>
 							</div>
 						</div>

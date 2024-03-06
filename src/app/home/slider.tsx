@@ -28,7 +28,7 @@ const data = [
 	{
 		id: 3,
 		imgSrc: ValueImg,
-		title: "Gá trị cốt lõi",
+		title: "Giá trị cốt lõi",
 		content: `
 		<p>- Nỗ lực thật, giá trị thật</p><br />
 		<p>- Không ngừng sáng tạo, không ngừng đổi mới</p><br />
