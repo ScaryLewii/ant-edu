@@ -8,6 +8,8 @@ import Pte3 from "public/static-images/cefr3.jpg";
 import Pte6 from "public/static-images/cefr6.jpg";
 import Pte8 from "public/static-images/cefr8.jpg";
 
+import { Website, Facebook, Tiktok, Youtube } from "../../../app/_components/assets/icons";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -76,10 +78,10 @@ const data = [
 				<i>Ant Edu tự hào là sở hữu các cộng đồng người học tiếng Anh lớn nhất Việt Nam với nhiều Fanpage, Group chia sẻ kiến thức, phương pháp học cho cả học viên và giáo viên. Người học có thể tìm hiểu thêm nhiều kiến thức thú vị, trao đổi và  giao lưu, kết nối để đạt được hiệu quả học tập và công việc.</i>
 			
 				<div class="mt-8 flex items-center justify-center gap-[40px]">
-					<a href="/page-not-found" target="_blank" class="font-bold">Website</a>
-					<a href="/page-not-found" target="_blank" class="font-bold">Facebook</a>
-					<a href="/page-not-found" target="_blank" class="font-bold">Tiktok</a>
-					<a href="/page-not-found" target="_blank" class="font-bold">Youtube</a>
+					<a href="/page-not-found" target="_blank" class="font-bold hover:text-light hover:underline inline-flex gap-[10px]">${Website} Website</a>
+					<a href="/page-not-found" target="_blank" class="font-bold hover:text-light hover:underline inline-flex gap-[10px]">${Facebook} Facebook</a>
+					<a href="/page-not-found" target="_blank" class="font-bold hover:text-light hover:underline inline-flex gap-[10px]">${Tiktok} Tiktok</a>
+					<a href="/page-not-found" target="_blank" class="font-bold hover:text-light hover:underline inline-flex gap-[10px]">${Youtube} Youtube</a>
 				</div>
 			</div>
 		`
