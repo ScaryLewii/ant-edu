@@ -4,8 +4,9 @@ import Link from "next/link";
 import Background from "public/background/news.jpg";
 import { useEffect, useState } from "react";
 import Block from "../_components/layout/block";
-import PostWithThumbnail from "../news/post-with-thumb";
 import { type IDocument } from "./types";
+import moment from "moment";
+import Image from "next/image";
 
 export default function NewsPage() {
 	const [data, setData] = useState<IDocument[]>([])
@@ -18,6 +19,7 @@ export default function NewsPage() {
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			const documents = JSON.parse(result).data.items as unknown as IDocument[] || []
 			setData(documents)
+			console.log(documents)
 		}
 
 		getData().catch(error => console.log(error))
@@ -37,14 +39,13 @@ export default function NewsPage() {
 				{data?.map((document) => 
 					<>
 						{document.documents?.map((doc, index) => (
-							<article key={index}>
-								<h2>{doc.displayName}</h2>
-								<Link
-									href={doc.url}
-									rel={'noreferrer'}
-									className="bg-cyan text-[18px] font-bold px-[47px] py-[15px] inline-block mt-3">
-									Download
-								</Link>
+							<article className="flex flex-col gap-[18px]" key={index}>
+								<Image src={document.thumbnail} width={455} height={256} alt={doc.displayName} unoptimized />
+								<div className="text-cyan">{moment(document.createdAt).format("DD/MM/YYYY")} | <span className="uppercase">{document.keywords}</span></div>
+								<h2 className="text-[22px] uppercase font-semibold hover:text-cyan">{doc.displayName}</h2>
+								<p>{document.description}</p>
+
+								<Link href={doc.url} className="italic font-semibold underline" target="_blank">Download</Link>
 							</article>
 						))}
 					</>
