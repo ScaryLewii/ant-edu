@@ -29,14 +29,14 @@ export default function NewsPage() {
 			<Block backgroundSrc={Background} backgroundArticle={true} className="bg-sea pb-[142px]">
 			{data?.[0] && 
 				<article className="container mx-auto max-w-[900px] mt-[30%] mb-[160px] text-center">
-					<Link href={'news/' + data[0].id}>
+					<Link href={'news/' + data[0].slug}>
 						<h1 className="text-center text-white text-[40px] font-bold">{data[0].title}</h1>
 					</Link>
 					<div className="text-white my-[18px]">{moment(data[0].createdAt).format("DD/MM/YYYY")} | <span className="uppercase">{data[0].type}</span></div>
 
 					<div className="mb-[57px]">{data[0].description}</div>
 
-					<Link href={'news/' + data[0].id} className="bg-cyan text-[18px] font-bold px-[47px] py-[15px]">Đọc tiếp</Link>
+					<Link href={'news/' + data[0].slug} className="bg-cyan text-[18px] font-bold px-[47px] py-[15px]">Đọc tiếp</Link>
 				</article>
 			}
 

@@ -37,7 +37,7 @@ export default function News() {
 
 	useEffect(() => {
 		const getPostData = async () => {
-			const request = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "posts/" + postId)
+			const request = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "posts/slugs/" + postId)
 			const result = await request.text()
 
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access

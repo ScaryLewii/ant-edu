@@ -45,7 +45,9 @@ export default function NewsPage() {
 								<h2 className="text-[22px] uppercase font-semibold hover:text-cyan">{doc.displayName}</h2>
 								<p>{document.description}</p>
 
-								<Link href={doc.url} className="italic font-semibold underline" target="_blank">Download</Link>
+								<Link href={
+									doc.url.includes('http') ? doc.url : `https://apitest.ant-edu.ai${doc.url}`
+								} className="italic font-semibold underline" target="_blank">Download</Link>
 							</article>
 						))}
 					</>
