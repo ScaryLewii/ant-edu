@@ -1,10 +1,6 @@
 "use client"
 
 import { useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import InformImg from "public/static-images/informed.png"
-import RegisteredImg from "public/static-images/registered.png"
 
 export default function FacebookPage() {
 	useEffect(() => {
@@ -29,16 +25,6 @@ export default function FacebookPage() {
 				data-width="580" 
 				data-hide-cover="false"
 				data-show-facepile="false"></div>
-
-			<div className="flex items-center gap-[60px] mt-[40px]">
-				<Link href="">
-					<Image src={RegisteredImg} alt="" width={147} height={45} />
-				</Link>
-
-				<Link href="">
-					<Image src={InformImg} alt="" width={147} height={45} />
-				</Link>
-			</div>
 		</div>
 	);
 }

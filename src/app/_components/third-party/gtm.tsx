@@ -3,13 +3,13 @@ import { useEffect } from "react"
 
 const GTM = () => {
 	const script = `<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCDXQ5FJLJ"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E80BDB2LKF"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	
-	  gtag('config', 'G-YCDXQ5FJLJ');
+	  gtag('config', 'G-E80BDB2LKF');
 	</script>`
 
 	useEffect(() => {

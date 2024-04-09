@@ -21,7 +21,7 @@ export default function Footer() {
 			<Image src={Background} width={1920} height={1080} alt="home background"
 				className="absolute top-0 left-0 w-full h-full object-cover" />
 
-			<div className="container flex flex-col lg:flex-row justify-around items-center z-20 h-full gap-[60px] lg:gap-[120px]">
+			<div className="container flex flex-col lg:flex-row justify-between items-center z-20 h-full gap-[60px] lg:gap-[120px]">
 				<div className="flex flex-col gap-[30px]">
 					<h2 className="flex gap-2 items-center">
 						<Image src={Logo} alt="ant edu" width={110} height={108} className="w-[52px] h-[51px] lg:w-[110px] lg:h-[108px]" />
