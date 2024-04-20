@@ -62,7 +62,7 @@ export default function News() {
 			{data && 
 				<article className="container mx-auto max-w-[1040px] mt-[30%]">
 					<h1 className="text-center text-cyan text-[40px] font-bold">{data.title}</h1>
-					<span className="mx-auto block text-center">{data.createdAt}</span>
+					<span className="mx-auto block text-center">{data.updatedAt || data.createdAt}</span>
 
 					<div className="text-justify mt-[140px] flex flex-col" dangerouslySetInnerHTML={{__html: data.content}}>
 					</div>
